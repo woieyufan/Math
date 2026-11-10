@@ -24,12 +24,16 @@ from pages_sample_3_4_5 import get_page_8, get_page_9, get_page_10, get_page_11,
 from pages_back import get_page_14
 
 # Paths setup
-workspace_dir = r'C:\Users\user\Documents'
-logo_png_path = os.path.join(workspace_dir, r'woieyufan-brand-assets\woieyufan-logo-transparent-300dpi.png')
-svg_watermark_path = os.path.join(workspace_dir, r'woieyufan-brand-assets\woieyufan-logo_downward.svg')
-output_html = os.path.join(workspace_dir, '看見幾何_進階視覺數學課外讀物.html')
-output_pdf = os.path.join(workspace_dir, '看見幾何_進階視覺數學課外讀物.pdf')
-temp_pdf = os.path.join(workspace_dir, '看見幾何_進階視覺數學課外讀物_temp.pdf')
+current_dir = os.path.dirname(os.path.abspath(__file__))
+math_art_dir = os.path.abspath(os.path.join(current_dir, '..'))
+repo_root = os.path.abspath(os.path.join(math_art_dir, '..'))
+brand_assets_dir = os.path.join(repo_root, 'woieyufan-brand-assets')
+
+logo_png_path = os.path.join(brand_assets_dir, 'woieyufan-logo-transparent-300dpi.png')
+svg_watermark_path = os.path.join(brand_assets_dir, 'woieyufan-logo_downward.svg')
+output_html = os.path.join(math_art_dir, '看見幾何_進階視覺數學課外讀物.html')
+output_pdf = os.path.join(math_art_dir, '看見幾何_進階視覺數學課外讀物.pdf')
+temp_pdf = os.path.join(math_art_dir, '看見幾何_進階視覺數學課外讀物_temp.pdf')
 
 def run_build():
     print("=== Step 1: Base64 Encoding Brand Assets ===")
@@ -94,14 +98,22 @@ def run_build():
 
     print("=== Step 3: Headless Chrome Compilation to PDF (iPad 4:3) ===")
     chrome_paths = [
+        shutil.which('google-chrome'),
+        shutil.which('chromium'),
+        shutil.which('chromium-browser'),
+        shutil.which('chrome'),
         r'C:\Program Files\Google\Chrome\Application\chrome.exe',
         r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe',
-        os.path.expanduser(r'~\AppData\Local\Google\Chrome\Application\chrome.exe')
+        os.path.expanduser(r'~\AppData\Local\Google\Chrome\Application\chrome.exe'),
+        '/usr/bin/google-chrome',
+        '/usr/bin/chromium',
+        '/usr/bin/chromium-browser',
+        '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
     ]
 
     chrome_bin = None
     for p in chrome_paths:
-        if os.path.exists(p):
+        if p and os.path.exists(p):
             chrome_bin = p
             break
 

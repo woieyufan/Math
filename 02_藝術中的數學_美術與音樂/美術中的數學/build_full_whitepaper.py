@@ -3,13 +3,16 @@ import os
 import sys
 import subprocess
 import base64
-import fitz
 
 # Paths
-logo_png_path = r'C:\Users\user\Documents\woieyufan-brand-assets\woieyufan-logo-transparent-300dpi.png'
-svg_watermark_path = r'C:\Users\user\Documents\woieyufan-brand-assets\woieyufan-logo_downward.svg'
-output_html = r'C:\Users\user\Documents\小學全域_美術中的數學企劃白皮書.html'
-output_pdf = r'C:\Users\user\Documents\小學全域_美術中的數學企劃白皮書.pdf'
+base_dir = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.abspath(os.path.join(base_dir, '..', '..'))
+brand_assets_dir = os.path.join(repo_root, '02_藝術中的數學_美術與音樂', 'woieyufan-brand-assets')
+
+logo_png_path = os.path.join(brand_assets_dir, 'woieyufan-logo-transparent-300dpi.png')
+svg_watermark_path = os.path.join(brand_assets_dir, 'woieyufan-logo_downward.svg')
+output_html = os.path.join(base_dir, '小學全域_美術中的數學企劃白皮書.html')
+output_pdf = os.path.join(base_dir, '小學全域_美術中的數學企劃白皮書.pdf')
 
 with open(logo_png_path, "rb") as f:
     logo_base64 = base64.b64encode(f.read()).decode("utf-8")
@@ -21,7 +24,7 @@ svg_data_uri = f"data:image/svg+xml;base64,{svg_base64}"
 
 print("Assets encoded to Base64.")
 
-html_content = f'''<!DOCTYPE html>
+html_content = '''<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
@@ -1130,6 +1133,13 @@ document.addEventListener("DOMContentLoaded", function() {{
 </body>
 </html>
 '''
+html_content = (
+    html_content
+    .replace('{svg_data_uri}', svg_data_uri)
+    .replace('{logo_data_uri}', logo_data_uri)
+    .replace('{{', '{')
+    .replace('}}', '}')
+)
 
 with open(output_html, 'w', encoding='utf-8') as f:
     f.write(html_content)

@@ -12,6 +12,7 @@ desktop.ini
 # Temporary and log files
 *.log
 *_temp.pdf
+*_raw.pdf
 *.tmp
 
 # IDE & Editor

@@ -13,14 +13,51 @@ import subprocess
 import base64
 import fitz
 
+import shutil
+
 # Paths
-svg_path = r"C:\Users\user\Documents\woieyufan-logo_downward.svg"
-badge_png = r"C:\Users\user\.gemini\antigravity\brain\17c5c8ea-1f34-4270-a5e4-410bdd5037d4\scratch\clean_logo.png"
-raw_pdf = r"C:\Users\user\.gemini\antigravity\brain\17c5c8ea-1f34-4270-a5e4-410bdd5037d4\scratch\whitepaper_raw.pdf"
-final_pdf = r"C:\Users\user\Documents\中學超前自學_微積分先修體系白皮書.pdf"
-html_path = r"C:\Users\user\.gemini\antigravity\brain\17c5c8ea-1f34-4270-a5e4-410bdd5037d4\scratch\whitepaper_branded.html"
-chrome_path = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
-cjk_font_path = r"C:\Windows\Fonts\msjh.ttc"
+base_dir = os.path.dirname(os.path.abspath(__file__))
+project_dir = os.path.abspath(os.path.join(base_dir, '..'))
+repo_root = os.path.abspath(os.path.join(project_dir, '..'))
+brand_assets_dir = os.path.join(repo_root, '02_藝術中的數學_美術與音樂', 'woieyufan-brand-assets')
+whitepaper_dir = os.path.join(project_dir, '體系白皮書與工程藍皮書')
+
+svg_path = os.path.join(brand_assets_dir, "woieyufan-logo_downward.svg")
+badge_png = os.path.join(brand_assets_dir, "logo_badge.png")
+raw_pdf = os.path.join(base_dir, "whitepaper_raw.pdf")
+final_pdf = os.path.join(whitepaper_dir, "中學超前自學_微積分先修體系白皮書.pdf")
+html_path = os.path.join(base_dir, "whitepaper_branded.html")
+
+chrome_candidates = [
+    shutil.which('google-chrome'),
+    shutil.which('chromium'),
+    shutil.which('chromium-browser'),
+    shutil.which('chrome'),
+    r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+    r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+    os.path.expanduser(r"~\AppData\Local\Google\Chrome\Application\chrome.exe"),
+    "/usr/bin/google-chrome",
+    "/usr/bin/chromium"
+]
+chrome_path = None
+for c in chrome_candidates:
+    if c and os.path.exists(c):
+        chrome_path = c
+        break
+
+font_candidates = [
+    r"C:\Windows\Fonts\msjh.ttc",
+    r"C:\Windows\Fonts\msjhbd.ttc",
+    "/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc",
+    "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+    "/usr/share/fonts/truetype/noto/NotoSerifTC-Regular.otf",
+    "/System/Library/Fonts/PingFang.ttc"
+]
+cjk_font_path = None
+for f_path in font_candidates:
+    if f_path and os.path.exists(f_path):
+        cjk_font_path = f_path
+        break
 
 # Encode Logo to Base64
 with open(badge_png, "rb") as f:
@@ -424,6 +461,8 @@ cmd = [
     chrome_path,
     "--headless=new",
     "--disable-gpu",
+    "--no-sandbox",
+    "--disable-dev-shm-usage",
     "--run-all-compositor-stages-before-draw",
     "--virtual-time-budget=8000",
     "--no-pdf-header-footer",
@@ -447,7 +486,11 @@ badge_w = 26.0
 badge_h = 25.0
 
 # Prepare CJK font for Chinese running headers
-doc[0].insert_font(fontname="cjk_header", fontfile=cjk_font_path)
+header_font = "cjk_header"
+if cjk_font_path:
+    doc[0].insert_font(fontname="cjk_header", fontfile=cjk_font_path)
+else:
+    header_font = "china-t"
 
 for page_idx in range(total_pages):
     page = doc[page_idx]
@@ -455,7 +498,8 @@ for page_idx in range(total_pages):
     h = page.rect.height
 
     # Register font on every page
-    page.insert_font(fontname="cjk_header", fontfile=cjk_font_path)
+    if cjk_font_path:
+        page.insert_font(fontname="cjk_header", fontfile=cjk_font_path)
 
     # Header Stamping
     if page_idx == 0:
@@ -466,7 +510,7 @@ for page_idx in range(total_pages):
         # Running header on pages 2+
         # Left header text
         header_text = "中學超前自學 · 微積分先修體系白皮書（第一性原理綱領與認知架構）"
-        page.insert_text(fitz.Point(margin_x, header_y + 16), header_text, fontname="cjk_header", fontsize=8.5, color=(0.28, 0.35, 0.44))
+        page.insert_text(fitz.Point(margin_x, header_y + 16), header_text, fontname=header_font, fontsize=8.5, color=(0.28, 0.35, 0.44))
 
         # Right header logo badge
         badge_rect = fitz.Rect(w - margin_x - badge_w, header_y, w - margin_x, header_y + badge_h)

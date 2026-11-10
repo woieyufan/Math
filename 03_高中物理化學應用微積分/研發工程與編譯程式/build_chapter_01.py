@@ -352,17 +352,17 @@ $$g(x) = \begin{cases} x \sin\left(\frac{1}{x}\right), & x \neq 0 \\ 0, & x = 0 
 """
 
 # File paths
-book_ch01_md = r"C:\Users\user\Documents\中學微積分先修專著_第01章.md"
-book_ch01_txt = r"C:\Users\user\Documents\中學微積分先修專著_第01章.txt"
-artifact_ch01_md = r"C:\Users\user\.gemini\antigravity\brain\17c5c8ea-1f34-4270-a5e4-410bdd5037d4\calculus_volume1_ch01.md"
+base_dir = os.path.dirname(os.path.abspath(__file__))
+project_dir = os.path.abspath(os.path.join(base_dir, '..'))
+text_dir = os.path.join(project_dir, '專著正文與詳細解答')
+
+book_ch01_md = os.path.join(text_dir, "中學微積分先修專著_第01章.md")
+book_ch01_txt = os.path.join(text_dir, "中學微積分先修專著_第01章.txt")
 
 with open(book_ch01_md, "w", encoding="utf-8") as f:
     f.write(ch01_content)
 
 with open(book_ch01_txt, "w", encoding="utf-8") as f:
-    f.write(ch01_content)
-
-with open(artifact_ch01_md, "w", encoding="utf-8") as f:
     f.write(ch01_content)
 
 print(f"Chapter 1 monograph successfully generated! Length: {len(ch01_content)} characters.")
