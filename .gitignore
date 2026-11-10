@@ -15,9 +15,6 @@ desktop.ini
 *_raw.pdf
 *.tmp
 
-# Documents (temporarily untracked from GitHub)
-*.pdf
-
 # IDE & Editor
 .vscode/
 .idea/
