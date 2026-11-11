@@ -22,7 +22,7 @@ from pages_pillars import (
 from pages_pedagogy import get_page_13, get_page_14, get_page_15
 from pages_back import get_page_16
 
-def run_build():
+def run_build(generate_pdf=False):
     # Paths
     src_dir = os.path.dirname(os.path.abspath(__file__))
     gifted_math_dir = os.path.abspath(os.path.join(src_dir, '..'))
@@ -98,6 +98,10 @@ def run_build():
         f.write(full_html)
 
     print(f"HTML generated at: {output_html} ({len(full_html)} bytes)")
+
+    if not generate_pdf:
+        print("[PDF Skipped] 全域設定：預設不主動生成 PDF。HTML 已就緒。若需編譯 PDF，請傳入 --pdf 參數。")
+        return True
 
     print("=== Step 3: Headless Chrome Compilation to PDF ===")
     chrome_paths = [

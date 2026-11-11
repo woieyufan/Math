@@ -70,9 +70,12 @@
 
 ### 常用編譯指令
 ```bash
-# 編譯《中學數理資優思維與奧賽教研白皮書》PDF（專案一）
+# 編譯《中學數理資優思維與奧賽教研白皮書》HTML（預設不主動生成 PDF）
 cd 01_資優數學講義
 python build_gifted_math_whitepaper.py
+
+# 若明確需輸出 PDF，傳入 --pdf 旗標：
+python build_gifted_math_whitepaper.py --pdf
 
 # 編譯《小學全域：美術中的數學白皮書》PDF（專案二）
 cd 02_藝術中的數學_美術與音樂/美術中的數學

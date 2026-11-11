@@ -43,20 +43,22 @@
 
 ## 一鍵自動編譯指南
 
-本專案配備出版級自動編譯引擎，支援將模組化代碼即時編譯為高解析度 A4 PDF，並自動注入原生互動教育批註 (Annotations) 與側邊書籤目錄 (Outline)：
+本專案配備出版級自動編譯引擎。**全域規範遵循「預設不主動生成 PDF」**：
+- 預設模式：僅生成高解析度 HTML 白皮書（快速、輕量、含完整 KaTeX 數學渲染）。
+- PDF 模式：當傳入 `--pdf` 旗標時，調用 Headless Chrome 列印並透過 PyMuPDF 自動注入 8 處原生互動批註與 16 級側邊書籤目錄。
 
 ```bash
-# 確保環境具備 Python 3.9+、Google Chrome 與 PyMuPDF
-pip install pymupdf
-
-# 執行一鍵編譯
+# 預設編譯：生成 HTML 典藏白皮書
 cd 01_資優數學講義
 python build_gifted_math_whitepaper.py
+
+# 若明確需要輸出 PDF（需安裝 google-chrome 與 pymupdf）：
+python build_gifted_math_whitepaper.py --pdf
 ```
 
-編譯完成後將在當前目錄自動生成：
-- `中學數理資優思維與奧賽教研白皮書.html`
-- `中學數理資優思維與奧賽教研白皮書.pdf`
+輸出文件：
+- `中學數理資優思維與奧賽教研白皮書.html`（預設生成）
+- `中學數理資優思維與奧賽教研白皮書.pdf`（僅在 `--pdf` 時生成）
 
 ---
 
