@@ -12,3 +12,7 @@ if src_dir not in sys.path:
     sys.path.insert(0, src_dir)
 
 import build
+
+if __name__ == '__main__':
+    generate_pdf = "--pdf" in sys.argv
+    build.run_build(generate_pdf=generate_pdf)

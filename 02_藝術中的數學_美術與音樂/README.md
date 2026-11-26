@@ -8,12 +8,12 @@
 
 ### 1. 美術中的數學（Mathematics in Visual Art & Geometry）
 - **核心教材專著**：
-  - 《小學全域：美術中的數學工程企劃白皮書》（24 講全域工程規格書）
-  - 《看見幾何：從寫字、拍照、剪衣服到文藝復興名畫的視覺解密》（課外閱讀典藏專著）
+  - 《小學全域：美術中的數學工程企劃白皮書》（24 講全域工程規格書：比例與對稱、平面密鋪與多面體、展開圖與角虧打版、**三視圖正投影 $\to$ 高斯《絕妙定理》橘子皮地圖投影［麥卡托 vs. 彼得斯］ $\to$ 等角軸測與中心透視利弊反轉**、色彩空間與點彩派向量）
+  - 《看見幾何：從寫字、拍照、剪衣服到文藝復興名畫的視覺解密》（課外閱讀典藏專著，卷四同步重構投影三部曲與透視大案）
 - **工程原始碼**：
-  - `art_math_v3_src/`：模組化 Python 原始碼，組裝 24 堂課美術數學白皮書與互動教研便箋。
+  - `art_math_v3_src/`：模組化 Python 原始碼，組裝 24 堂課美術數學白皮書與 `v3_lessons.txt` 同步清冊。
   - `book_vision_geometry_src/`：課外讀物排版與編譯工程程式庫。
-  - `build_art_math_pdf.py`、`build_geometry_book.py` 等一鍵編譯腳本。
+  - `build_whitepaper_v2.py`、`build_geometry_book.py`、`build_art_math_pdf.py` 等一鍵編譯腳本（預設僅輸出 HTML，顯式傳入 `--pdf` 時方編譯 PDF 與互動批註）。
 
 ### 2. 音樂中的數學（Mathematics in Music & Acoustic Physics）
 - **課外閱讀典藏專著（單冊整合定本）**：

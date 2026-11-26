@@ -14,4 +14,5 @@ if src_dir not in sys.path:
 import build
 
 if __name__ == '__main__':
-    pass
+    generate_pdf = "--pdf" in sys.argv
+    build.run_build(generate_pdf=generate_pdf)

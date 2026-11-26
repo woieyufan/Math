@@ -14,7 +14,6 @@ import sys
 import subprocess
 import base64
 import shutil
-import fitz
 
 # Import modular page definitions
 from styles import HTML_HEAD
@@ -35,7 +34,7 @@ output_html = os.path.join(math_art_dir, '看見幾何_進階視覺數學課外�
 output_pdf = os.path.join(math_art_dir, '看見幾何_進階視覺數學課外讀物.pdf')
 temp_pdf = os.path.join(math_art_dir, '看見幾何_進階視覺數學課外讀物_temp.pdf')
 
-def run_build():
+def run_build(generate_pdf=False):
     print("=== Step 1: Base64 Encoding Brand Assets ===")
     if not os.path.exists(logo_png_path):
         raise FileNotFoundError(f"Missing logo file: {logo_png_path}")
@@ -59,8 +58,8 @@ def run_build():
         get_page_5(),   # P. 5 Sample 1 (Ch 01 Calligraphy Right)
         get_page_6(),   # P. 6 Sample 2 (Ch 03 Stars & Remainders Left)
         get_page_7(),   # P. 7 Sample 2 (Ch 03 Stars & Remainders Right)
-        get_page_8(),   # P. 8 Sample 3 (Ch 17 Pisa Tower Left)
-        get_page_9(),   # P. 9 Sample 3 (Ch 17 Pisa Tower Right)
+        get_page_8(),   # P. 8 Sample 3 (Ch 18 Pisa Tower Left)
+        get_page_9(),   # P. 9 Sample 3 (Ch 18 Pisa Tower Right)
         get_page_10(),  # P. 10 Sample 4 (Ch 13 Darts & Cone Left)
         get_page_11(),  # P. 11 Sample 4 (Ch 13 Darts & Cone Right)
         get_page_12(),  # P. 12 Sample 5 (Ch 22 Lamentation Left)
@@ -96,6 +95,11 @@ def run_build():
 
     print(f"HTML generated at: {output_html} ({len(full_html)} bytes)")
 
+    if not generate_pdf:
+        print("=== HTML-only mode complete (pass --pdf to compile PDF) ===")
+        return
+
+    import fitz
     print("=== Step 3: Headless Chrome Compilation to PDF (iPad 4:3) ===")
     chrome_paths = [
         shutil.which('google-chrome'),

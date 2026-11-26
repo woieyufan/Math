@@ -3,17 +3,17 @@
 Sample Chapters 3, 4 & 5 (Pages 8 to 13) for
 《看見幾何：從寫字、拍照、剪衣服到文藝復興名畫的視覺解密》
 
-Page 8-9: Sample Chapter 3 (TOC Ch 17) - 推倒比薩斜塔！相似三角形借位攝影方程
+Page 8-9: Sample Chapter 3 (TOC Ch 18) - 巨人與推倒比薩斜塔！相似三角形借位攝影方程
 Page 10-11: Sample Chapter 4 (TOC Ch 13) - 打版師的幾何剪刀：衣服省道、圓錐與角虧
 Page 12-13: Sample Chapter 5 (TOC Ch 22) - 躺著的巨人：曼特尼亞《哀悼基督》與調和平均數
 """
 
 def get_page_8():
     return r'''
-  <!-- PAGE 8: CHAPTER 17 (SPREAD LEFT) -->
+  <!-- PAGE 8: CHAPTER 18 (SPREAD LEFT) -->
   <div class="section-page">
     <div class="page-top-header">
-      <span class="header-left">VOL 4 ｜ CHAPTER 17：推倒比薩斜塔！（PART 1）</span>
+      <span class="header-left">VOL 4 ｜ CHAPTER 18：巨人與推倒比薩斜塔！（PART 1）</span>
       <div class="header-right">
         <img class="header-logo-mini" src="__LOGO_DATA_URI__" alt="Mini Logo">
         <span>woieyufan BOOKS</span>
@@ -21,7 +21,7 @@ def get_page_8():
     </div>
 
     <div class="chapter-header-box">
-      <div class="chapter-tag">CASE FILE #17 ｜ 鏡頭光影與透視大案</div>
+      <div class="chapter-tag">CASE FILE #18 ｜ 工程投影、地圖騙局與透視大案</div>
       <div class="chapter-title">推倒比薩斜塔！攝影師的「相似三角形」借位懸案</div>
       <div class="para">
         在義大利比薩奇蹟廣場上，每天都有成千上萬名遊客做出滑稽的姿勢：有人側身雙手使勁往前推，有人伸出食指捏住半空中。而在他們的相機螢幕裡，出現了一個不可思議的畫面——<strong>身高 1.4 公尺的小學生，竟然用兩根手指輕鬆捏住了高達 56 公尺、重達 14,000 噸的千年中世紀鐘樓！</strong>為什麼一個普通人能在照片裡瞬間變成「頂天立地的巨靈神」？
@@ -96,10 +96,10 @@ def get_page_8():
 
 def get_page_9():
     return r'''
-  <!-- PAGE 9: CHAPTER 17 (SPREAD RIGHT) -->
+  <!-- PAGE 9: CHAPTER 18 (SPREAD RIGHT) -->
   <div class="section-page">
     <div class="page-top-header">
-      <span class="header-left">VOL 4 ｜ CHAPTER 17：推倒比薩斜塔！（PART 2）</span>
+      <span class="header-left">VOL 4 ｜ CHAPTER 18：巨人與推倒比薩斜塔！（PART 2）</span>
       <div class="header-right">
         <img class="header-logo-mini" src="__LOGO_DATA_URI__" alt="Mini Logo">
         <span>woieyufan BOOKS</span>
@@ -336,7 +336,7 @@ def get_page_11():
     <div class="card-pane" style="margin-bottom: 8px; background: #fdf2f8; border-left: 4px solid var(--ruby);">
       <div style="font-weight: 800; color: #9f1239; font-size: 11.5px; margin-bottom: 3px;">高斯的「絕妙定理」與多面體網格</div>
       <div style="font-size: 10.5px; color: #881337; line-height: 1.5;">
-        高斯證明：當一個曲面彎曲但不拉伸時，高斯曲率 $K$ 保持不變！平坦布料 $K=0$。當你把紙捲成圓柱體時高斯曲率仍為 0，所以圓柱體可以被完美攤平；但人體是雙曲面或球形（$K \ne 0$）。裁縫師用剪刀剪出角虧，本質上就是用**「多面體三角網格逼近曲面」**的幾何壯舉！
+        高斯證明：當一個曲面彎曲但不拉伸時，高斯曲率 $K$ 保持不變！平坦布料 $K=0$，捲成圓柱體時 $K$ 仍為 0 所以能無皺攤平；但球面橘子皮或人體（$K \ne 0$）則屬「不可展曲面」，這也正是第 16 章世界地圖平攤必會失真的數學根源。裁縫師用剪刀剪出角虧，本質上就是用<strong>「多面體三角網格逼近曲面」</strong>的幾何壯舉！
       </div>
     </div>
 

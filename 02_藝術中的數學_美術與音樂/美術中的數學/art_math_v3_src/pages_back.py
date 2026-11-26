@@ -68,12 +68,12 @@ def get_page_back_1():
     <div class="section-title">5.2 六大階段實體成果清冊（無死板作業，自帶社交光環）</div>
     <div class="callout-box" style="background: #f8fafc; border-left: 4px solid var(--primary);">
       <div class="callout-content" style="color: #334155;">
-        <p style="margin: 0 0 6px 0;"><strong>第 4 堂成果</strong>：【古典人體 7.5 頭身黃金模矩尺】（附三大平均數作圖板與 $\sqrt{2}\sim\sqrt{5}$ 動態規）</p>
-        <p style="margin: 0 0 6px 0;"><strong>第 8 堂成果</strong>：【艾雪密鋪幾何印章套組】（含滑移反射剪貼版畫與向日葵黃金螺線繪圖儀）</p>
-        <p style="margin: 0 0 6px 0;"><strong>第 12 堂成果</strong>：【阿爾伯蒂地坪透視壓克力板】（含單點與兩點消失點直線測點規）</p>
-        <p style="margin: 0 0 6px 0;"><strong>第 16 堂成果</strong>：【《紀念碑谷》30°等角軸測立體城堡】（含包浩斯幾何燈罩與潘洛斯視錯覺模型）</p>
-        <p style="margin: 0 0 6px 0;"><strong>第 20 堂成果</strong>：【科赫雪花與分形浪花自相似彩繪版畫】（附謝爾賓斯基鏤空幾何幾何卡）</p>
-        <p style="margin: 0;"><strong>第 24 堂成果</strong>：【文藝復興幾何工程原創巨作】（綜合調和透視、艾雪鑲嵌與秀拉光學向量之大成）</p>
+        <p style="margin: 0 0 6px 0;"><strong>第 4 堂成果</strong>：【古典人體 7.5 頭身黃金模矩尺】（附三大平均數作圖板、$\sqrt{2}\sim\sqrt{5}$ 動態規與達文西中垂線軸尺）</p>
+        <p style="margin: 0 0 6px 0;"><strong>第 8 堂成果</strong>：【艾雪密鋪幾何印章與柏拉圖鏤空木架】（含玫瑰花窗等分盤、向日葵黃金螺線儀與五大多面體模型）</p>
+        <p style="margin: 0 0 6px 0;"><strong>第 12 堂成果</strong>：【包浩斯燈罩、裁縫省道圓錐與 Low Poly 紙雕】（含正方體 11 張皮、足球截角模型與角虧量角盤）</p>
+        <p style="margin: 0 0 6px 0;"><strong>第 16 堂成果</strong>：【三視圖測繪圖紙、橘子皮世界地圖與《紀念碑谷》等角城堡】（對照正交量測、麥卡托／彼得斯失真與視錐借位）</p>
+        <p style="margin: 0 0 6px 0;"><strong>第 20 堂成果</strong>：【阿爾伯蒂地坪透視壓克力板與文藝復興消失點測繪軸】（含《最後晚餐》一次方程規與《哀悼基督》調和比例尺）</p>
+        <p style="margin: 0;"><strong>第 24 堂成果</strong>：【文藝復興幾何工程原創巨作】（綜合調和透視、艾雪鑲嵌、色彩立體坐標與秀拉光學向量之大成）</p>
       </div>
     </div>
 
@@ -186,7 +186,7 @@ def get_page_back_3():
         <div class="rubric-item"><strong>Level 1 (初學)</strong>：無法識別幾何規律，完全憑感覺主觀下筆。</div>
         <div class="rubric-item"><strong>Level 2 (基礎)</strong>：能理解頭身比與消失點，但作圖常有偏差。</div>
         <div class="rubric-item"><strong>Level 3 (熟練)</strong>：熟練運用三大平均數、勾股作圖與艾雪密鋪。</div>
-        <div class="rubric-item"><strong>Level 4 (精通)</strong>：精通調和透視縮短、角虧定理與碎形極限。</div>
+        <div class="rubric-item"><strong>Level 4 (精通)</strong>：精通正交與地圖投影失真、角虧定理與調和透視縮短。</div>
       </div>
 
       <div class="rubric-box">

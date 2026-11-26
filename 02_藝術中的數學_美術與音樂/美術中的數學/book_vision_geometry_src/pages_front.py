@@ -105,9 +105,9 @@ def get_page_2():
           <td>笛卡兒角虧、展開圖、歐拉公式 $V-E+F=2$</td>
         </tr>
         <tr>
-          <td><strong>卷四：鏡頭光影與透視大案</strong></td>
-          <td>影子測高、手電筒圓錐光斑、比薩斜塔借位拍照、名畫消失點、哀悼基督</td>
-          <td>相似三角形、中心投影、反比調和平均數</td>
+          <td><strong>卷四：投影三部曲與透視大案</strong></td>
+          <td>三視圖正交量測、橘子皮地圖投影、紀念碑谷等角視錯覺、比薩斜塔借位、名畫消失點與哀悼基督</td>
+          <td>正交投影、高斯曲率、相似形、一次方程、調和平均數</td>
         </tr>
         <tr>
           <td><strong>卷五：極限色彩與終極大作</strong></td>
@@ -229,42 +229,42 @@ def get_page_3():
 
       <!-- COLUMN 2: VOL 4, 5 & SAMPLE GUIDE -->
       <div>
-        <!-- VOL 4 -->
+        <!-- VOL 4: 重構後的投影大案 -->
         <div class="toc-vol-box">
           <div class="toc-vol-head">
-            <span>【卷四：鏡頭光影與透視大案】相似形與投影</span>
+            <span>【卷四：工程投影、地圖騙局與透視大案】投影三部曲</span>
             <span style="color: var(--neon-cyan);">CH 15–22</span>
           </div>
           <div class="toc-chap-row">
-            <span class="toc-chap-title">第 15 章 踩在腳底的巨人——影子幾何、太陽平行光與路燈發散光</span>
-            <span class="toc-chap-math">平行投影 / 發散光線</span>
+            <span class="toc-chap-title">第 15 章 工程師的忠實眼睛——三視圖正交量測與深度歸零代價</span>
+            <span class="toc-chap-math">正交投影 / 尺度守恆</span>
           </div>
           <div class="toc-chap-row">
-            <span class="toc-chap-title">第 16 章 手電筒照牆壁的魔法——圓、橢圓、拋物線圓錐截面</span>
-            <span class="toc-chap-math">圓錐曲線 / 截面投影</span>
+            <span class="toc-chap-title">第 16 章 剝不開的橘子皮——高斯絕妙定理與地圖投影騙局</span>
+            <span class="toc-chap-math">不可展 / 麥卡托・彼得斯</span>
           </div>
           <div class="toc-chap-row">
-            <span class="toc-chap-title">第 17 章 推倒比薩斜塔！——相機視錐截線與相似三角形借位</span>
-            <span class="toc-chap-math">相似三角形 $\frac{h}{d}=\frac{H}{D}$</span>
+            <span class="toc-chap-title">第 17 章 走不出的城堡——《紀念碑谷》30°等角軸測與錯覺</span>
+            <span class="toc-chap-math">Isometric / 潘洛斯錯覺</span>
           </div>
           <div class="toc-chap-row">
-            <span class="toc-chap-title">第 18 章 照片怎麼裁最好看？——相機九宮格取景、三分法構圖</span>
-            <span class="toc-chap-math">黃金分割 / 視覺重心</span>
+            <span class="toc-chap-title">第 18 章 巨人與推倒斜塔——平行影子到相機視錐相似形</span>
+            <span class="toc-chap-math">相似形 $\frac{h}{d}=\frac{H}{D}$</span>
           </div>
           <div class="toc-chap-row">
-            <span class="toc-chap-title">第 19 章 耶穌額頭上的十字星——《最後晚餐》天花板一次方程</span>
+            <span class="toc-chap-title">第 19 章 眼睛的魔法與謊言——透視法誕生與利弊大反轉</span>
+            <span class="toc-chap-math">中心視錐 / 度量崩潰</span>
+          </div>
+          <div class="toc-chap-row">
+            <span class="toc-chap-title">第 20 章 耶穌額頭上的十字星——《最後晚餐》一次方程</span>
             <span class="toc-chap-math">一次函數斜率 / 消失點</span>
           </div>
           <div class="toc-chap-row">
-            <span class="toc-chap-title">第 20 章 地板瓷磚的溜滑梯——阿爾伯蒂地坪網格平行截比例線</span>
+            <span class="toc-chap-title">第 21 章 地板瓷磚的溜滑梯——阿爾伯蒂地坪截比例線段</span>
             <span class="toc-chap-math">平行線截比例線段</span>
           </div>
           <div class="toc-chap-row">
-            <span class="toc-chap-title">第 21 章 走不出的城堡——《紀念碑谷》30 度等角軸測視錯覺</span>
-            <span class="toc-chap-math">Isometric 軸測 / 三視圖</span>
-          </div>
-          <div class="toc-chap-row">
-            <span class="toc-chap-title">第 22 章 躺著的巨人——曼特尼亞《哀悼基督》與調和平均數</span>
+            <span class="toc-chap-title">第 22 章 躺著的巨人——曼特尼亞《哀悼基督》與調和平均</span>
             <span class="toc-chap-math">調和平均 $H = \frac{2ab}{a+b}$</span>
           </div>
         </div>
@@ -290,7 +290,7 @@ def get_page_3():
           <strong>★ 本冊精選 5 大示範樣章試讀索引（循序漸進爬坡）：</strong><br>
           • P. 04–05：【樣章 1 / 第 01 章】漢字九宮格坐標系與不倒翁重心力矩<br>
           • P. 06–07：【樣章 2 / 第 03 章】時鐘上的流星雨：除法餘數與一筆畫星形<br>
-          • P. 08–09：【樣章 3 / 第 17 章】推倒比薩斜塔！相似三角形借位攝影方程<br>
+          • P. 08–09：【樣章 3 / 第 18 章】巨人與推倒比薩斜塔！相似三角形借位方程<br>
           • P. 10–11：【樣章 4 / 第 13 章】打版師的幾何剪刀：衣服省道、圓錐與角虧<br>
           • P. 12–13：【樣章 5 / 第 22 章】曼特尼亞《哀悼基督》與調和平均數透視
         </div>

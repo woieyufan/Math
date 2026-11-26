@@ -358,16 +358,16 @@ def get_page_6():
       <div class="ba-col" style="background: #fdf2f8; border: 1px solid #fbcfe8; padding: 12px 14px;">
         <div class="ba-head" style="color: #9d174d; font-size: 13px; margin-bottom: 6px;">軌道 B：三維空間、光影色彩與物理極限（立體、光學與力學）</div>
         <p style="color: #334155; font-size: 12px; margin: 4px 0; line-height: 1.5;"><strong>模組三：光學色彩・神經生理</strong>（角度量測、平角 $180^\circ$）：萬花筒像數 $N=360/\theta-1$、RGB 刺激錐細胞 vs CMYK 吸光代數、莫內天光散射相反色陰影、手電筒圓錐截面。</p>
-        <p style="color: #334155; font-size: 12px; margin: 4px 0; line-height: 1.5;"><strong>模組五：立體多面體・空間裁縫</strong>（柱錐展開圖、立體折疊）：柏拉圖多面體角虧、正方體 11 皮爬行法、世足足球截角二十面體、服裝打版省道（Dart）圓錐高 $H=\sqrt{R^2-r^2}$、莫比烏斯環。</p>
-        <p style="color: #334155; font-size: 12px; margin: 4px 0; line-height: 1.5;"><strong>模組六：比例透視・中央射影</strong>（相似形、三視圖）：相機中央射影一體論、比薩斜塔借位相似形 $\frac{h}{d}=\frac{H}{D}$、哀悼基督調和平均數透視阻尼、紀念碑谷等角軸測盲區。</p>
-        <p style="color: #334155; font-size: 12px; margin: 4px 0; line-height: 1.5;"><strong>模組七：極限碎形・結構力學</strong>（等比規律、吸管搭接）：科赫雪花周長發散面積收斂、巴恩斯利蕨類 IFS、向日葵黃金角 $137.5^\circ$、肥皂泡 $120^\circ$ 極小曲面、三角形桁架剛性。</p>
+        <p style="color: #334155; font-size: 12px; margin: 4px 0; line-height: 1.5;"><strong>模組五：立體多面體・空間裁縫</strong>（柱錐展開圖、立體折疊）：柏拉圖多面體角虧、正方體 11 皮爬行法、世足足球截角二十面體、服裝打版省道（Dart）圓錐高 $H=\sqrt{R^2-r^2}$、Low Poly 網格離散化。</p>
+        <p style="color: #334155; font-size: 12px; margin: 4px 0; line-height: 1.5;"><strong>模組六：投影三部曲・中央射影</strong>（三視圖、相似形、調和平均）：正交三視圖度量守恆與深度歸零、橘子皮地圖投影（高斯絕妙定理、麥卡托 vs 彼得斯）、紀念碑谷等角軸測盲區、相機視錐借位 $\frac{h}{d}=\frac{H}{D}$、中心透視利弊反轉與哀悼基督。</p>
+        <p style="color: #334155; font-size: 12px; margin: 4px 0; line-height: 1.5;"><strong>模組七：極限碎形・結構力學</strong>（蓄水池進階儲備）：科赫雪花周長發散面積收斂、謝爾賓斯基、神奈川沖浪裏碎形維度、肥皂泡 $120^\circ$ 極小曲面。</p>
       </div>
     </div>
 
     <div class="callout-box" style="background: #f8fafc; border: 1px dashed var(--primary-border); margin: 10px 0;">
       <div class="callout-title" style="color: var(--primary);">★ 「先全放，後面再刪」的題庫蓄水池理念（The Grand Reservoir）</div>
       <div class="callout-content" style="color: #475569;">
-        本體系確立**「題庫先行、儲備極大化」**的研發方針。先期將所有能被小學數學加深的跨界題材（目前已聚積 39 案）全景納入儲備池，不急於人為閹割篇幅。章節只是教學與排版的載體，最重要的是給孩子一張橫跨幾何、光學、物理、藝術與程式運算的完整世界觀地圖。後續出版或開課時，可根據不同年段學情靈活剪裁！
+        本體系確立<strong>「題庫先行、儲備極大化」</strong>的研發方針。先期將所有能被小學數學加深的跨界題材（目前已聚積 39 案）全景納入儲備池，第四章則嚴選其中 24 堂組成教學主軸。章節只是教學與排版的載體，最重要的是給孩子一張橫跨幾何、光學、投影、物理與藝術的完整世界觀地圖，並可依學情靈活調度！
       </div>
     </div>
 
@@ -446,13 +446,13 @@ def get_page_8():
       <div class="chapter-title">第三章：核心跨界幾何與硬核科學公理（續）</div>
     </div>
 
-    <div class="section-title">3.4 中央射影與相機視錐光學一體公理（Central Projection & Lens Optics）</div>
+    <div class="section-title">3.4 投影三部曲：正交、不可展曲面與中央射影公理（Projection & Optics）</div>
     <div class="para">
-      【小學數學對接：相似三角形、反比除法、調和平均數】<br>
-      相機焦點與畫家視點在幾何上完全等價。視錐截線 AAA 相似形方程式決定借位拍照站位；透視縱深地磚間距呈調和級數收縮 $z \propto \frac{1}{Z}$，調和平均數構成透視非線性阻尼，破解曼特尼亞《哀悼基督》的空間修正：
+      【小學數學對接：三視圖、圓面積、相似三角形、反比與調和平均數】<br>
+      正交三視圖保長度與直角，卻強制歸零深度；高斯《絕妙定理》證明球面曲率 $K=\frac{1}{R^2}>0$ 無法無損平攤，迫使麥卡托（保角、高緯面積膨脹 $\sec^2\phi$）與彼得斯（保面積、形狀拉伸）各自讓步；中心視錐透視吻合視網膜成像卻令度量失真，$\frac{h}{d}=\frac{H}{D}$ 與調和平均數正是駕馭透視的數學鎖鑰：
     </div>
     <div class="formula-box">
-      $$\frac{h}{d} = \frac{H}{D}, \quad H_{\text{harmonic}} = \frac{2ab}{a+b}$$
+      $$P(x,y,z)\to(x,y),\quad \text{麥卡托膨脹 }\sec^2\phi,\quad \frac{h}{d}=\frac{H}{D},\quad H_{\text{harmonic}}=\frac{2ab}{a+b}$$
     </div>
 
     <div class="section-title">3.5 模運算閉合與齒輪傳動比公理（Modular Arithmetic & Spirograph LCM）</div>

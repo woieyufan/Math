@@ -2,6 +2,7 @@
 """
 Expanded Lesson Pages (12 pages, 2 lessons per page)
 Spacious typography and comfortable reading hierarchy (Path B)
+Synchronized 6-Stage / 24-Lesson Curriculum with Refactored Projection Trilogy.
 """
 
 def get_lesson_page_1():
@@ -16,8 +17,8 @@ def get_lesson_page_1():
       </div>
     </div>
     <div class="stage-banner">
-      <span>第一階段：比例論、三大古典平均數與畫布幾何分割（第 1–4 堂）</span>
-      <span class="stage-badge">比例與古典平均數</span>
+      <span>第一階段：比例論、古典平均數、無理數與對稱軸線（第 1–4 堂）</span>
+      <span class="stage-badge">比例與對稱基準</span>
     </div>
 
     <!-- LESSON 1 -->
@@ -102,45 +103,14 @@ def get_lesson_page_2():
       </div>
     </div>
     <div class="stage-banner">
-      <span>第一階段：比例論、三大古典平均數與畫布幾何分割（第 1–4 堂）</span>
-      <span class="stage-badge">比例與古典平均數</span>
+      <span>第一階段：比例論、古典平均數、無理數與對稱軸線（第 1–4 堂）</span>
+      <span class="stage-badge">比例與對稱基準</span>
     </div>
 
     <!-- LESSON 3 -->
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 3 堂</span>
-        <span class="lesson-title-text">調和平均數（Harmonic Mean）：人體透視縮短與《哀悼基督》</span>
-      </div>
-      <div class="ba-container">
-        <div class="ba-col ba-before">
-          <div class="ba-head">Before 課本痛點</div>
-          痛恨「往返平均速度 $v = \frac{2v_1v_2}{v_1+v_2}$」與合作注水問題，畫平躺伸腿人體時等長平鋪毫無深度。
-        </div>
-        <div class="ba-col ba-after">
-          <div class="ba-head">After 藝術破解</div>
-          曼特尼亞《哀悼基督》。人體等距骨節（胸、腹、膝、足）在透視畫布上的間距即為「調和數列」，完美縮短。
-        </div>
-      </div>
-      <div class="lesson-grid">
-        <div class="sub-box">
-          <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國一倒數運算、速率問題、正反比調和模型。</div>
-        </div>
-        <div class="sub-box">
-          <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">調和平均數 $H = \frac{2ab}{a+b}$、透視中點調和分割。</div>
-        </div>
-        <div class="sub-box">
-          <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">曼特尼亞《哀悼基督》，梯形對角線調和作圖。</div>
-        </div>
-      </div>
-    </div>
-    <!-- LESSON 4 -->
-    <div class="lesson-card">
-      <div class="lesson-header">
-        <span class="lesson-num">第 4 堂</span>
         <span class="lesson-title-text">畢氏定理與無理數作圖：提奧多魯斯螺線與動態矩形（$\sqrt{2}\sim\sqrt{5}$）</span>
       </div>
       <div class="ba-container">
@@ -168,34 +138,10 @@ def get_lesson_page_2():
         </div>
       </div>
     </div>
-    <div class="page-bottom-footer">
-      <span class="footer-left">小學全域：視覺幾何與藝術工程 ｜ 24 堂全模組探案課程矩陣</span>
-      <span class="footer-center">第 10 頁 / 共 24 頁</span>
-      <span class="footer-right">woieyufan EDUCATION ｜ 內部專利發行規範</span>
-    </div>
-  </div>
-'''
-
-def get_lesson_page_3():
-    return r'''
-
-  <div class="section-page">
-    <div class="page-top-header">
-      <span class="header-left">24-LESSON MATRIX ｜ STAGE 2 (PART 1)</span>
-      <div class="header-right">
-        <img class="header-logo-mini" src="__LOGO_DATA_URI__" alt="Mini Logo">
-        <span>woieyufan EDUCATION</span>
-      </div>
-    </div>
-    <div class="stage-banner">
-      <span>第二階段：對稱變換、剛體群與平面密鋪（第 5–8 堂）</span>
-      <span class="stage-badge">對稱變換與艾雪密鋪</span>
-    </div>
-
-    <!-- LESSON 5 -->
+    <!-- LESSON 4 -->
     <div class="lesson-card">
       <div class="lesson-header">
-        <span class="lesson-num">第 5 堂</span>
+        <span class="lesson-num">第 4 堂</span>
         <span class="lesson-title-text">線對稱與中垂線尺規：達文西構圖軸線與人體雙側對稱</span>
       </div>
       <div class="ba-container">
@@ -223,10 +169,34 @@ def get_lesson_page_3():
         </div>
       </div>
     </div>
-    <!-- LESSON 6 -->
+    <div class="page-bottom-footer">
+      <span class="footer-left">小學全域：視覺幾何與藝術工程 ｜ 24 堂全模組探案課程矩陣</span>
+      <span class="footer-center">第 10 頁 / 共 24 頁</span>
+      <span class="footer-right">woieyufan EDUCATION ｜ 內部專利發行規範</span>
+    </div>
+  </div>
+'''
+
+def get_lesson_page_3():
+    return r'''
+
+  <div class="section-page">
+    <div class="page-top-header">
+      <span class="header-left">24-LESSON MATRIX ｜ STAGE 2 (PART 1)</span>
+      <div class="header-right">
+        <img class="header-logo-mini" src="__LOGO_DATA_URI__" alt="Mini Logo">
+        <span>woieyufan EDUCATION</span>
+      </div>
+    </div>
+    <div class="stage-banner">
+      <span>第二階段：圓周分割、平面密鋪與多面體初探（第 5–8 堂）</span>
+      <span class="stage-badge">密鋪與立體角虧</span>
+    </div>
+
+    <!-- LESSON 5 -->
     <div class="lesson-card">
       <div class="lesson-header">
-        <span class="lesson-num">第 6 堂</span>
+        <span class="lesson-num">第 5 堂</span>
         <span class="lesson-title-text">正多邊形內角和與圓心角：哥德式教堂玫瑰花窗（Rose Window）</span>
       </div>
       <div class="ba-container">
@@ -254,40 +224,16 @@ def get_lesson_page_3():
         </div>
       </div>
     </div>
-    <div class="page-bottom-footer">
-      <span class="footer-left">小學全域：視覺幾何與藝術工程 ｜ 24 堂全模組探案課程矩陣</span>
-      <span class="footer-center">第 11 頁 / 共 24 頁</span>
-      <span class="footer-right">woieyufan EDUCATION ｜ 內部專利發行規範</span>
-    </div>
-  </div>
-'''
-
-def get_lesson_page_4():
-    return r'''
-
-  <div class="section-page">
-    <div class="page-top-header">
-      <span class="header-left">24-LESSON MATRIX ｜ STAGE 2 (PART 2)</span>
-      <div class="header-right">
-        <img class="header-logo-mini" src="__LOGO_DATA_URI__" alt="Mini Logo">
-        <span>woieyufan EDUCATION</span>
-      </div>
-    </div>
-    <div class="stage-banner">
-      <span>第二階段：對稱變換、剛體群與平面密鋪（第 5–8 堂）</span>
-      <span class="stage-badge">對稱變換與艾雪密鋪</span>
-    </div>
-
-    <!-- LESSON 7 -->
+    <!-- LESSON 6 -->
     <div class="lesson-card">
       <div class="lesson-header">
-        <span class="lesson-num">第 7 堂</span>
+        <span class="lesson-num">第 6 堂</span>
         <span class="lesson-title-text">平面密鋪條件與滑移反射：艾雪（M. C. Escher）非週期蜥蜴拼貼</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          課本只提正三角形、正方形、正六邊機能鋪滿地面（內角整除 360°），淺嚐輒止，完全沒教複雜形狀如何密鋪。
+          課本只提正三角形、正方形、正六邊機能鋪滿地面（內角整除 $360^\circ$），淺嚐輒止，完全沒教複雜形狀如何密鋪。
         </div>
         <div class="ba-col ba-after">
           <div class="ba-head">After 藝術破解</div>
@@ -309,10 +255,34 @@ def get_lesson_page_4():
         </div>
       </div>
     </div>
-    <!-- LESSON 8 -->
+    <div class="page-bottom-footer">
+      <span class="footer-left">小學全域：視覺幾何與藝術工程 ｜ 24 堂全模組探案課程矩陣</span>
+      <span class="footer-center">第 11 頁 / 共 24 頁</span>
+      <span class="footer-right">woieyufan EDUCATION ｜ 內部專利發行規範</span>
+    </div>
+  </div>
+'''
+
+def get_lesson_page_4():
+    return r'''
+
+  <div class="section-page">
+    <div class="page-top-header">
+      <span class="header-left">24-LESSON MATRIX ｜ STAGE 2 (PART 2)</span>
+      <div class="header-right">
+        <img class="header-logo-mini" src="__LOGO_DATA_URI__" alt="Mini Logo">
+        <span>woieyufan EDUCATION</span>
+      </div>
+    </div>
+    <div class="stage-banner">
+      <span>第二階段：圓周分割、平面密鋪與多面體初探（第 5–8 堂）</span>
+      <span class="stage-badge">密鋪與立體角虧</span>
+    </div>
+
+    <!-- LESSON 7 -->
     <div class="lesson-card">
       <div class="lesson-header">
-        <span class="lesson-num">第 8 堂</span>
+        <span class="lesson-num">第 7 堂</span>
         <span class="lesson-title-text">極坐標螺線與費氏數列：向日葵種子排列與黃金螺線</span>
       </div>
       <div class="ba-container">
@@ -340,6 +310,37 @@ def get_lesson_page_4():
         </div>
       </div>
     </div>
+    <!-- LESSON 8 -->
+    <div class="lesson-card">
+      <div class="lesson-header">
+        <span class="lesson-num">第 8 堂</span>
+        <span class="lesson-title-text">神聖五大多面體：柏拉圖立體與達文西鏤空木架</span>
+      </div>
+      <div class="ba-container">
+        <div class="ba-col ba-before">
+          <div class="ba-head">Before 課本痛點</div>
+          背誦正四面體、正方體、正八、十二、二十面體的點線面數量，卻完全不懂為什麼全宇宙只有這 5 種正多面體。
+        </div>
+        <div class="ba-col ba-after">
+          <div class="ba-head">After 藝術破解</div>
+          達文西《神聖比例》插畫。用小學內角加減窮舉頂點：相接面數 $\ge 3$ 且頂點內角和必嚴格小於 $360^\circ$（留出角虧），才立得起來。
+        </div>
+      </div>
+      <div class="lesson-grid">
+        <div class="sub-box">
+          <div class="sub-label">K-9 數學錨點</div>
+          <div class="sub-desc">國小正多邊形內角、國中立體幾何頂點與稜邊。</div>
+        </div>
+        <div class="sub-box">
+          <div class="sub-label">核心定理與算式</div>
+          <div class="sub-desc">頂點角虧條件 $k \cdot \alpha_n < 360^\circ$（窮舉僅餘 5 解）。</div>
+        </div>
+        <div class="sub-box">
+          <div class="sub-label">藝術名作與工具</div>
+          <div class="sub-desc">達文西鏤空木架立體圖，竹籤黏土立體搭接。</div>
+        </div>
+      </div>
+    </div>
     <div class="page-bottom-footer">
       <span class="footer-left">小學全域：視覺幾何與藝術工程 ｜ 24 堂全模組探案課程矩陣</span>
       <span class="footer-center">第 12 頁 / 共 24 頁</span>
@@ -360,38 +361,38 @@ def get_lesson_page_5():
       </div>
     </div>
     <div class="stage-banner">
-      <span>第三階段：相似形、平行截線與射影透視法（第 9–12 堂）</span>
-      <span class="stage-badge">泰勒斯截線與消失點</span>
+      <span>第三階段：展開圖拓撲、角虧裁縫與曲面離散化（第 9–12 堂）</span>
+      <span class="stage-badge">展開圖與曲率打版</span>
     </div>
 
     <!-- LESSON 9 -->
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 9 堂</span>
-        <span class="lesson-title-text">平行截比例線段與泰勒斯定理：阿爾伯蒂地坪網格（Pavimento）</span>
+        <span class="lesson-title-text">正方體 11 張皮與摺紙拓撲：包浩斯立體幾何燈罩</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          平行線截線段成比例定理全是幾何符號證明，學生覺得枯燥；畫透視地磚時橫線間距隨便畫，立體感塌陷。
+          考試死記硬背正方體 11 種展開圖口訣（「一四一」、「二三一」），缺乏立體幾何閉合與空間爬行實作。
         </div>
         <div class="ba-col ba-after">
           <div class="ba-head">After 藝術破解</div>
-          文藝復興阿爾伯蒂地坪網格。畫地磚往後退縮橫線，經對角線測點截平行線，嚴格遵循比例定理繪出深遠地坪。
+          包浩斯工業造型設計。親手歸納並剪出 11 種合法展開圖，計算黏貼折角幾何，製作嚴密閉合的幾何立體燈罩。
         </div>
       </div>
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國三「平行線截比例線段、相似三角形定理」。</div>
+          <div class="sub-desc">國小展開圖與相對面、國一「立體表面積」。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">泰勒斯截線比 $\frac{A_1B_1}{B_1C_1}=\frac{A_2B_2}{B_2C_2}$、對角線測點法。</div>
+          <div class="sub-desc">11 種同構展開分類、共邊折疊角度 $90^\circ$ 閉合判定。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">阿爾伯蒂《論繪畫》透視地坪，丁字尺與測點。</div>
+          <div class="sub-desc">包浩斯幾何燈罩，厚卡紙切割線與黏貼舌。</div>
         </div>
       </div>
     </div>
@@ -399,30 +400,30 @@ def get_lesson_page_5():
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 10 堂</span>
-        <span class="lesson-title-text">一次函數直線方程與斜率：單點透視與《最後的晚餐》消失點</span>
+        <span class="lesson-title-text">阿基米德截角多面體：足球 12 塊正五邊形與歐拉示性數</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          解二元一次方程式與算斜率 $m = \frac{\Delta y}{\Delta x}$ 繁瑣枯燥，不知道現實中無數條射線如何交會。
+          把歐拉公式 $V-E+F=2$ 當成無趣的數數題，不知為何每一顆標準黑白足球都必然剛好有 12 塊黑色五邊形。
         </div>
         <div class="ba-col ba-after">
           <div class="ba-head">After 藝術破解</div>
-          達文西《最後的晚餐》。所有天花板邊緣與長桌側邊化為坐標直線方程，手算聯立方程證明精確交於耶穌額頭消失點。
+          把正二十面體 12 個尖角切平，每個角都截出 1 塊正五邊形、原三角形化為正六邊形！用歐拉公式代數反推出 $F_5=12$ 絕非巧合。
         </div>
       </div>
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國二「直角坐標系、一次函數圖形與二元一次聯立」。</div>
+          <div class="sub-desc">國一多面體點線面計數、一元一次方程聯立代換。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">直線方程 $y=mx+b$、共點線（Concurrent Lines）交點。</div>
+          <div class="sub-desc">歐拉公式 $V-E+F=2$、截角二十面體 $F_5=12, F_6=20$。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">達文西《最後的晚餐》，直角坐標透明方格網。</div>
+          <div class="sub-desc">巴克敏斯特·富勒球（$C_{60}$）與世足賽經典足球拼片。</div>
         </div>
       </div>
     </div>
@@ -446,38 +447,38 @@ def get_lesson_page_6():
       </div>
     </div>
     <div class="stage-banner">
-      <span>第三階段：相似形、平行截線與射影透視法（第 9–12 堂）</span>
-      <span class="stage-badge">泰勒斯截線與消失點</span>
+      <span>第三階段：展開圖拓撲、角虧裁縫與曲面離散化（第 9–12 堂）</span>
+      <span class="stage-badge">展開圖與曲率打版</span>
     </div>
 
     <!-- LESSON 11 -->
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 11 堂</span>
-        <span class="lesson-title-text">相似三角形面積比：大氣透視法與物體縱深縮小率</span>
+        <span class="lesson-title-text">打版師的幾何剪刀：衣服省道、圓錐展開與人造角虧</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          死背「長度比 $1:k \implies$ 面積比 $1:k^2$」，畫遠景風景時遠處樹木房子大小完全畫不準。
+          算圓錐展開扇形圓心角與弧長全憑題庫公式硬套，從未體會角虧如何把一張平紙變成貼身立體衣物。
         </div>
         <div class="ba-col ba-after">
           <div class="ba-head">After 藝術破解</div>
-          繪製遠山與林木風景。距離每增加 1 倍，畫布成像高度縮小為 $1/2$、面積縮小為 $1/4$，色彩對比度按距離反比衰減。
+          高訂服裝立體打版。平面布料內蘊曲率為 0；剪去夾角 $\theta$ 的 V 形省道（Dart）並縫合，消失的角度強迫平面向第三維度拱起成圓錐！
         </div>
       </div>
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國三「相似多邊形邊長比與面積平方比」。</div>
+          <div class="sub-desc">國二畢氏定理、國三扇形弧長與圓錐側面展開。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">邊長比 $k \implies$ 面積比 $k^2$、大氣透視色彩衰減比。</div>
+          <div class="sub-desc">人造角虧 $r = R(1 - \frac{\theta}{360^\circ})$、隆起高 $H = \sqrt{R^2 - r^2}$。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">達文西《岩間聖母》大氣透視，透明比例縮放片。</div>
+          <div class="sub-desc">巴黎高級訂製胸省打版紙樣，圓規與剪刀扇形實驗。</div>
         </div>
       </div>
     </div>
@@ -485,30 +486,30 @@ def get_lesson_page_6():
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 12 堂</span>
-        <span class="lesson-title-text">射影幾何交比（Cross-ratio）不變量：遠方柱廊的非線性壓縮</span>
+        <span class="lesson-title-text">Low Poly 半寫實動物紙雕：三維三角網格曲面離散化</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          國中生看遠方電線桿越來越密，直覺以為是等差數列遞減，實際測量發現完全不符合。
+          以為多面體展開圖只能摺方塊與角柱，不知現代 3D 動畫與數位雕塑如何靠三角形拼出光滑生物外觀。
         </div>
         <div class="ba-col ba-after">
           <div class="ba-head">After 藝術破解</div>
-          希臘神殿柱廊透視。射影幾何交比 $(A,B; C,D)$ 在中心投影下恆定不變，學生用尺規快速推求無窮遠柱子的精確間距。
+          低多邊形（Low Poly）幾何美學。以平面三角形為不可變形剛性單元，將曲面離散化為三角網格，計算各頂點角虧總和必等於 $720^\circ$。
         </div>
       </div>
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國三「投影幾何基礎、數線分點公式拓展」。</div>
+          <div class="sub-desc">國二三角形全等剛性、多面體展開與歐拉示性數。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">交比不變量 $(A,B; C,D) = \frac{(x_C-x_A)(x_D-x_B)}{(x_C-x_B)(x_D-x_A)} = \text{常數}$。</div>
+          <div class="sub-desc">笛卡兒總角虧定理 $\sum \delta_v = 720^\circ$、歐拉網格檢驗。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">雅典帕德嫩神廟柱廊，投影交比計算尺規。</div>
+          <div class="sub-desc">Low Poly 幾何狐狸紙雕，三角網格切割壓線實作。</div>
         </div>
       </div>
     </div>
@@ -532,38 +533,38 @@ def get_lesson_page_7():
       </div>
     </div>
     <div class="stage-banner">
-      <span>第四階段：空間立體、三視圖與軸測投影（第 13–16 堂）</span>
-      <span class="stage-badge">三視圖與等角軸測</span>
+      <span>第四階段：工程三視圖、地圖投影與等角視錐（第 13–16 堂）</span>
+      <span class="stage-badge">正交・不可展・軸測</span>
     </div>
 
     <!-- LESSON 13 -->
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 13 堂</span>
-        <span class="lesson-title-text">正方體展開圖與摺紙拓撲：包浩斯立體幾何燈罩</span>
+        <span class="lesson-title-text">三視圖與正投影的忠實量測：度量守恆與深度維度歸零的代價</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          考試死記硬背正方體 11 種展開圖口訣（「一四一」、「二三一」），缺乏立體幾何閉合實作體驗。
+          只會機械化數方塊畫出前、上、右視圖，完全不知為什麼工程藍圖不用立體透視而必須用三視圖。
         </div>
         <div class="ba-col ba-after">
-          <div class="ba-head">After 藝術破解</div>
-          包浩斯工業造型設計。親手繪製 11 種合法展開圖，計算黏貼折角幾何，製作出嚴密閉合的幾何立體燈罩。
+          <div class="ba-head">After 藝術與工程破解</div>
+          無限遠平行光垂直投影。揭示三視圖<strong>【利】尺寸 $1:1$ 守恆、直角依然直角，是施工唯一標準</strong>與<strong>【弊】深度維度強制歸零、違背生理眼球視覺</strong>的一體兩面。
         </div>
       </div>
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國一「立體圖形表面積、正方體展開圖與視圖」。</div>
+          <div class="sub-desc">國小高年級視圖、國中空間坐標與正交投影。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">11 種展開圖分類、歐拉多面體公式 $V-E+F=2$。</div>
+          <div class="sub-desc">投影降維映射 $P(x,y,z) \to (x,y)$，平行線長度不失真。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">包浩斯幾何燈罩，厚卡紙切割線與黏貼舌。</div>
+          <div class="sub-desc">建築施工正立面藍圖，三向正交方格紙測繪。</div>
         </div>
       </div>
     </div>
@@ -571,30 +572,30 @@ def get_lesson_page_7():
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 14 堂</span>
-        <span class="lesson-title-text">三視圖與 30° 等角軸測投影（Isometric）：《紀念碑谷》遊戲幾何</span>
+        <span class="lesson-title-text">剝不開的橘子皮與地圖投影：高斯絕妙定理、麥卡托等角 vs 彼得斯等積</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          前視圖、俯視圖、右視圖考題枯燥，學生空間旋轉想像困難，不知工程製圖與遊戲的美學價值。
+          地理課看世界地圖，誤以為格陵蘭島真跟非洲一樣大，完全不知把圓地球攤平必須付出的幾何代價。
         </div>
         <div class="ba-col ba-after">
-          <div class="ba-head">After 藝術破解</div>
-          世界級手遊《紀念碑谷》。捨棄透視消失點，改用三維座標以 $120^\circ$ 均分投影的「等角軸測圖」，畫出無透視衰減的經典立體城堡。
+          <div class="ba-head">After 藝術與工程破解</div>
+          剝橘子皮實驗！高斯絕妙定理證明球面無法無損平攤：麥卡托保角利航海卻令高緯面積膨脹逾 $14$ 倍；彼得斯保面積卻拉伸形狀；富勒二十面體折衷展開。
         </div>
       </div>
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國一～國二「空間幾何立體、三視圖繪製與投影」。</div>
+          <div class="sub-desc">圓面積、球表面積概念與比例尺區域放大率。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">$30^\circ$ 軸測幾何角、三軸比例 $1:1:1$、無衰減正射投影。</div>
+          <div class="sub-desc">高斯曲率 $K = \frac{1}{R^2} > 0$，麥卡托面積膨脹率 $\sec^2(\phi)$。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">《紀念碑谷》建築，專用等角三角網格點陣紙。</div>
+          <div class="sub-desc">1569 麥卡托世界航海圖、富勒戴麥克松展開地圖。</div>
         </div>
       </div>
     </div>
@@ -618,38 +619,38 @@ def get_lesson_page_8():
       </div>
     </div>
     <div class="stage-banner">
-      <span>第四階段：空間立體、三視圖與軸測投影（第 13–16 堂）</span>
-      <span class="stage-badge">三視圖與等角軸測</span>
+      <span>第四階段：工程三視圖、地圖投影與等角視錐（第 13–16 堂）</span>
+      <span class="stage-badge">正交・不可展・軸測</span>
     </div>
 
     <!-- LESSON 15 -->
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 15 堂</span>
-        <span class="lesson-title-text">圓錐截面幾何（Conic Sections）：手電筒光影與名畫中的橢圓</span>
+        <span class="lesson-title-text">30° 等角軸測投影（Isometric）：《紀念碑谷》深度缺失與視錯覺</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          國中只學圓，對高中才教的橢圓、拋物線充滿好奇卻從無作圖機會；畫杯口或光影時畫成兩頭尖的杏仁形。
+          對艾雪《瀑布》或《紀念碑谷》階梯錯覺極度著迷，卻不知為什麼畫在紙上看起來合理，現實中卻造不出來。
         </div>
         <div class="ba-col ba-after">
-          <div class="ba-head">After 藝術破解</div>
-          卡拉瓦喬明暗對照法（Chiaroscuro）。手電筒斜照牆面直觀見證圓形光束變成橢圓；以圖釘細繩按定義繪製完美橢圓盤子。
+          <div class="ba-head">After 藝術與工程破解</div>
+          把三維座標以 $120^\circ$ 均分、沿 $30^\circ$ 斜軸等比（$1:1:1$）平行投影：捨棄透視縮小後深度軸失去距離線索，高處與近處方塊在二維重疊造就潘洛斯錯覺。
         </div>
       </div>
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國三「圓的性質、立體截面」、國二光學投影。</div>
+          <div class="sub-desc">國一立體投影視圖、正三角形 $60^\circ / 30^\circ$ 網格角。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">圓錐截面定理、動點到兩焦點距離和 $d_1+d_2=2a$。</div>
+          <div class="sub-desc">$30^\circ$ 等角軸測無衰減投影、深度 $Z$ 軸連通假象判定。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">卡拉瓦喬靜物光影，雙圖釘細繩橢圓作圖法。</div>
+          <div class="sub-desc">《紀念碑谷》城堡與艾雪《瀑布》，等角三角點陣紙。</div>
         </div>
       </div>
     </div>
@@ -657,30 +658,30 @@ def get_lesson_page_8():
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 16 堂</span>
-        <span class="lesson-title-text">投影深度丟失與視覺錯覺：潘洛斯三角形（Penrose）與不可能階梯</span>
+        <span class="lesson-title-text">平行影子到相機視錐：相似三角形借位攝影與發散光線方程</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          對視錯覺圖案（艾雪《瀑布》）極度著迷，但課本只當趣味小插圖，從不解釋為什麼大腦會被欺騙。
+          會算「竹竿與旗桿影子相似比」，卻不知平行太陽光線與點光源視錐在幾何截線上的根本差異。
         </div>
         <div class="ba-col ba-after">
-          <div class="ba-head">After 藝術破解</div>
-          三維投影到二維畫布時，深度軸（$Z$ 軸）資訊丟失！利用此幾何盲區，親手繪製三維不可能相連的潘洛斯三角形。
+          <div class="ba-head">After 藝術與工程破解</div>
+          推倒比薩斜塔！從平行光等比測高進入小孔成像相機視錐：只要前後物體滿足同一視角 $\tan\theta = \frac{h}{d} = \frac{H}{D}$，兩根手指就能穩穩捏住 56 公尺高塔。
         </div>
       </div>
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國一「空間立體與平面投影」、國二平面直角坐標。</div>
+          <div class="sub-desc">小六比例式、國三「相似三角形 AAA 判定定理」。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">二維投影深度降維公理、拓撲連通性假象判定。</div>
+          <div class="sub-desc">視錐等角方程 $\frac{h}{d} = \frac{H}{D}$、小光圈全景深消除距離線索。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">艾雪《瀑布》《相對論》，潘洛斯三面體繪製。</div>
+          <div class="sub-desc">比薩斜塔借位攝影與《魔戒》強迫透視，手機實拍驗算。</div>
         </div>
       </div>
     </div>
@@ -704,38 +705,38 @@ def get_lesson_page_9():
       </div>
     </div>
     <div class="stage-banner">
-      <span>第五階段：數列極限、遞迴與自相似碎形（第 17–20 堂）</span>
-      <span class="stage-badge">等比極限與碎形幾何</span>
+      <span>第五階段：中心透視利弊反轉與名畫透視幾何（第 17–20 堂）</span>
+      <span class="stage-badge">透視法與調和縮短</span>
     </div>
 
     <!-- LESSON 17 -->
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 17 堂</span>
-        <span class="lesson-title-text">等比數列與面積遞減：謝爾賓斯基三角形（Sierpinski Gasket）</span>
+        <span class="lesson-title-text">中心透視投影的誕生：吻合生理觀察的極致沉浸與度量失真大反轉</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          等比數列成天考公比 $r$ 與第 $n$ 項 $a_n = a_1 r^{n-1}$，枯燥做題，完全無法想像無窮次遞推後的幾何圖案。
+          學畫透視線時只當套路死背，困惑為什麼平行的鐵軌非要畫成相交、正方形地磚非要畫成梯形。
         </div>
         <div class="ba-col ba-after">
-          <div class="ba-head">After 藝術破解</div>
-          中世紀彩繪幾何。正三角形挖去中間倒三角形，手算面積公比為 $3/4$，推導極限面積趨於 0、周長趨於無窮的幾何奇蹟。
+          <div class="ba-head">After 藝術與工程破解</div>
+          中心視錐反轉第 13 堂三視圖優缺點：<strong>【利】完全吻合視網膜生理成像，空間極致沉浸且統領視覺重心</strong>；<strong>【弊】度量全面崩潰，不能拿尺量真實尺寸</strong>。
         </div>
       </div>
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國二「等比數列第 $n$ 項與前 $n$ 項和、無窮遞減極限」。</div>
+          <div class="sub-desc">相似三角形、點光源中心投影與交會消失點。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">面積數列 $S_n = S_0 (3/4)^n \to 0$、周長數列 $P_n \to \infty$。</div>
+          <div class="sub-desc">中心投影公式 $x' = f \cdot \frac{x}{z}$，近大遠小非線性反比縮放。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">謝爾賓斯基三角形，三色幾何鏤空剪紙與彩繪。</div>
+          <div class="sub-desc">杜勒《透視製圖網格木版畫》，觀景窗方格描繪。</div>
         </div>
       </div>
     </div>
@@ -743,30 +744,30 @@ def get_lesson_page_9():
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 18 堂</span>
-        <span class="lesson-title-text">分形自相似與海岸線長度：科赫雪花（Koch Snowflake）</span>
+        <span class="lesson-title-text">一次函數直線方程與斜率：單點透視與《最後的晚餐》天花板消失點</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          學生堅信「有限紙張上畫出的圖形，周長絕對是有限的」，無法理解幾何極限的奇異性質。
+          解二元一次方程式與算斜率 $m = \frac{\Delta y}{\Delta x}$ 繁瑣枯燥，不知道現實中無數條射線如何精準交會。
         </div>
         <div class="ba-col ba-after">
           <div class="ba-head">After 藝術破解</div>
-          正三角形三邊長出小三角形。手算每次邊長乘 $1/3$、邊數乘 4，周長以公比 $4/3$ 暴增，證明 A4 紙上雪花周長能繞地球！
+          達文西《最後的晚餐》。所有天花板邊緣與長桌側邊化為坐標直線方程，手算聯立方程證明精確交於耶穌額頭消失點。
         </div>
       </div>
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國二「等比數列應用、極限直觀概念」。</div>
+          <div class="sub-desc">國二「直角坐標系、一次函數圖形與二元一次聯立」。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">周長 $C_n = 3(4/3)^n \to \infty$、面積收斂值 $\frac{8}{5}S_0$。</div>
+          <div class="sub-desc">直線方程 $y=mx+b$、共點線（Concurrent Lines）交點。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">科赫雪花分形圖，迭代圓規三等分繪圖。</div>
+          <div class="sub-desc">達文西《最後的晚餐》，直角坐標透明方格網。</div>
         </div>
       </div>
     </div>
@@ -790,38 +791,38 @@ def get_lesson_page_10():
       </div>
     </div>
     <div class="stage-banner">
-      <span>第五階段：數列極限、遞迴與自相似碎形（第 17–20 堂）</span>
-      <span class="stage-badge">等比極限與碎形幾何</span>
+      <span>第五階段：中心透視利弊反轉與名畫透視幾何（第 17–20 堂）</span>
+      <span class="stage-badge">透視法與調和縮短</span>
     </div>
 
     <!-- LESSON 19 -->
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 19 堂</span>
-        <span class="lesson-title-text">黃金矩形幾何遞迴：文藝復興構圖龍骨（Harmonic Armature）</span>
+        <span class="lesson-title-text">平行截比例線段與泰勒斯定理：阿爾伯蒂地坪網格（Pavimento）</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          國三考相似形「矩形切掉一個正方形後，剩餘矩形與原矩形相似」，學生只當成代數難題，不知其藝術神威。
+          平行線截線段成比例定理全是幾何符號證明，學生覺得枯燥；畫透視地磚時橫線間距隨便畫，立體感塌陷。
         </div>
         <div class="ba-col ba-after">
           <div class="ba-head">After 藝術破解</div>
-          手算代數方程 $\frac{1}{x} = \frac{x}{1-x} \implies x^2+x-1=0$ 解出黃金比；在畫布拉出 14 條對角線與垂線，揭開《蒙娜麗莎》構圖龍骨。
+          文藝復興阿爾伯蒂地坪網格。畫地磚往後退縮橫線，經對角線測點截平行線，在度量崩潰的畫布上重新精準鎖定縱深比例。
         </div>
       </div>
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國三「一元二次方程式公式解、相似矩形幾何」。</div>
+          <div class="sub-desc">國三「平行線截比例線段、相似三角形定理」。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">黃金比 $\phi = \frac{\sqrt{5}-1}{2} \approx 0.618$、調和骨架交點。</div>
+          <div class="sub-desc">泰勒斯截線比 $\frac{A_1B_1}{B_1C_1}=\frac{A_2B_2}{B_2C_2}$、對角線測點法。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">達文西《蒙娜麗莎》，黃金比例透明網格硫酸紙。</div>
+          <div class="sub-desc">阿爾伯蒂《論繪畫》透視地坪，丁字尺與測點。</div>
         </div>
       </div>
     </div>
@@ -829,30 +830,30 @@ def get_lesson_page_10():
     <div class="lesson-card">
       <div class="lesson-header">
         <span class="lesson-num">第 20 堂</span>
-        <span class="lesson-title-text">碎形維度與大自然浪花：葛飾北齋《神奈川沖浪裏》</span>
+        <span class="lesson-title-text">調和平均數（Harmonic Mean）：人體透視縮短與《哀悼基督》</span>
       </div>
       <div class="ba-container">
         <div class="ba-col ba-before">
           <div class="ba-head">Before 課本痛點</div>
-          課本說點是 0 維、線是 1 維、面是 2 維，學生從未想過世上有「介於 1 維與 2 維之間的分數維度」。
+          痛恨「往返平均速度 $v = \frac{2v_1v_2}{v_1+v_2}$」與合作注水問題，畫平躺伸腿人體時等長平鋪毫無深度或變形失禮。
         </div>
         <div class="ba-col ba-after">
           <div class="ba-head">After 藝術破解</div>
-          浮世繪名作北齋大浪。大浪尖端長出小浪爪、小浪爪長出水滴。以方格計數法（Box-counting）實測大浪自相似維度 $D \approx 1.26$。
+          曼特尼亞《哀悼基督》。人體等距骨節（胸、腹、膝、足）在透視畫布上的間距即為「調和數列」，大師更以調和阻尼保全頭顱莊嚴比例。
         </div>
       </div>
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國二「方格計數估算面積」、國三維度空間拓展。</div>
+          <div class="sub-desc">國一倒數運算、速率問題、正反比調和模型。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
-          <div class="sub-desc">豪斯多夫維度（Hausdorff）公式 $D = \frac{\log N}{\log(1/s)}$。</div>
+          <div class="sub-desc">調和平均數 $H = \frac{2ab}{a+b}$、透視中點調和分割。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">藝術名作與工具</div>
-          <div class="sub-desc">葛飾北齋《神奈川沖浪裏》，網格方格計數紙。</div>
+          <div class="sub-desc">曼特尼亞《哀悼基督》，梯形對角線調和作圖。</div>
         </div>
       </div>
     </div>
@@ -1016,7 +1017,7 @@ def get_lesson_page_12():
       <div class="lesson-grid">
         <div class="sub-box">
           <div class="sub-label">K-9 數學錨點</div>
-          <div class="sub-desc">國中小全學域「比例、幾何變換、透視、數列、坐標」。</div>
+          <div class="sub-desc">國中小全學域「比例、幾何變換、透視、投影、坐標」。</div>
         </div>
         <div class="sub-box">
           <div class="sub-label">核心定理與算式</div>
