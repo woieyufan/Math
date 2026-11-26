@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 500" width="1120" height="500">
+  <defs>
+    <style>
+      .bg { fill: #F8FAFC; }
+      .panel { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1.5; rx: 12; }
+      .title { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: 18px; font-weight: 700; fill: #1E3A5F; }
+      .subtitle { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: 13px; fill: #475569; }
+      .label-blue { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: 13.5px; font-weight: 600; fill: #1E3A5F; paint-order: stroke; stroke: #FFFFFF; stroke-width: 4px; stroke-linejoin: round; }
+      .label-orange { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: 13.5px; font-weight: 700; fill: #E05A47; paint-order: stroke; stroke: #FFFFFF; stroke-width: 4px; stroke-linejoin: round; }
+      .label-gray { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: 12.5px; fill: #64748B; paint-order: stroke; stroke: #FFFFFF; stroke-width: 4px; stroke-linejoin: round; }
+      .math { font-family: "Times New Roman", "Liberation Serif", Georgia, serif; font-style: italic; font-size: 15px; fill: #1E3A5F; paint-order: stroke; stroke: #FFFFFF; stroke-width: 4px; }
+      .math-orange { font-family: "Times New Roman", "Liberation Serif", Georgia, serif; font-style: italic; font-size: 14.5px; font-weight: 700; fill: #E05A47; paint-order: stroke; stroke: #FFFFFF; stroke-width: 4px; }
+      .formula-box { fill: #F1F5F9; stroke: #CBD5E1; stroke-width: 1.2; rx: 8; }
+      .formula-text { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: 12.8px; fill: #1E3A5F; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1120" height="500"/>
+
+  <!-- Panel A -->
+  <rect class="panel" x="20" y="20" width="530" height="460"/>
+  <text class="title" x="45" y="54">圖 A：半圓均分為 2ⁿ 片微元與代表性契約</text>
+  <text class="subtitle" x="45" y="76">先承認結構平權與以直代曲近似，再讀取代表微元重心</text>
+
+  <!-- Semicircle: O=(285, 322), R=180 -->
+  <path d="M 105 322 A 180 180 0 0 1 465 322 Z" fill="#EFF6FF" stroke="#1E3A5F" stroke-width="2.2"/>
+
+  <!-- 16 radial partition lines (angles k * 11.25 deg, k=1..15) -->
+  <g stroke="#94A3B8" stroke-width="1" stroke-dasharray="4 3">
+    <line x1="285" y1="322" x2="461.54" y2="286.88"/>
+    <line x1="285" y1="322" x2="451.30" y2="253.12"/>
+    <line x1="285" y1="322" x2="434.66" y2="222.00"/>
+    <line x1="285" y1="322" x2="412.28" y2="194.72"/>
+    <line x1="285" y1="322" x2="385.00" y2="172.34"/>
+    <line x1="285" y1="322" x2="353.88" y2="155.70"/>
+    <line x1="285" y1="322" x2="320.12" y2="145.46"/>
+    <line x1="285" y1="322" x2="285.00" y2="142.00"/>
+    <line x1="285" y1="322" x2="249.88" y2="145.46"/>
+    <line x1="285" y1="322" x2="216.12" y2="155.70"/>
+    <line x1="285" y1="322" x2="185.00" y2="172.34"/>
+    <line x1="285" y1="322" x2="157.72" y2="194.72"/>
+    <line x1="285" y1="322" x2="135.34" y2="222.00"/>
+    <line x1="285" y1="322" x2="118.70" y2="253.12"/>
+    <line x1="285" y1="322" x2="108.46" y2="286.88"/>
+  </g>
+
+  <!-- Highlighted representative sector (33.75 deg to 56.25 deg, bisector 45 deg) -->
+  <path d="M 285 322 L 434.66 222.00 A 180 180 0 0 0 385.00 172.34 Z" fill="rgba(224,90,71,0.18)" stroke="#E05A47" stroke-width="2"/>
+  <line x1="434.66" y1="222.00" x2="385.00" y2="172.34" stroke="#E05A47" stroke-width="2.4"/>
+  <path d="M 434.66 222.00 A 180 180 0 0 0 385.00 172.34" fill="none" stroke="#1E3A5F" stroke-width="2.8"/>
+
+  <!-- Angle bisector (45 deg) -->
+  <line x1="285" y1="322" x2="412.28" y2="194.72" stroke="#E05A47" stroke-width="1.5" stroke-dasharray="5 3"/>
+
+  <!-- Small angle arc for Δθ -->
+  <path d="M 334.89 288.67 A 60 60 0 0 0 318.33 272.11" fill="none" stroke="#E05A47" stroke-width="2"/>
+  <text class="math-orange" x="342" y="286">Δθ = π / 2ⁿ</text>
+
+  <!-- G0 at 2/3 R along 45 deg: 285+84.85=369.85, 322-84.85=237.15 -->
+  <circle cx="369.85" cy="237.15" r="5" fill="#E05A47" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text class="label-orange" x="378" y="233">G<tspan baseline-shift="sub" font-size="10">0</tspan> = ⅔ R</text>
+
+  <!-- Origin and radius -->
+  <circle cx="285" cy="322" r="4.5" fill="#1E3A5F"/>
+  <text class="label-blue" x="279" y="344">O</text>
+  <line x1="285" y1="322" x2="105" y2="322" stroke="#1E3A5F" stroke-width="2.2"/>
+  <text class="math" x="188" y="343">R</text>
+  <text class="math" x="336" y="185">R</text>
+
+  <!-- Clean non-overlapping callouts -->
+  <line x1="414" y1="201" x2="452" y2="164" stroke="#E05A47" stroke-width="1.3"/>
+  <text class="label-orange" x="424" y="154">弦（三角形外緣）</text>
+
+  <line x1="406" y1="186" x2="368" y2="132" stroke="#1E3A5F" stroke-width="1.3"/>
+  <text class="label-blue" x="292" y="124">圓弧（微元扇形）</text>
+
+  <line x1="168" y1="185" x2="138" y2="152" stroke="#64748B" stroke-width="1.2"/>
+  <text class="label-gray" x="52" y="138">2ⁿ 個全等微元</text>
+  <text class="label-gray" x="52" y="156">（結構平權代表）</text>
+
+  <!-- Formula summary box A -->
+  <rect class="formula-box" x="45" y="366" width="480" height="94"/>
+  <text class="formula-text" x="62" y="391">1. 結構平權：抽檢單一代表微元，其性質反映全體 2ⁿ 片扇形。</text>
+  <text class="formula-text" x="62" y="416">2. 以直代曲：A<tspan baseline-shift="sub" font-size="9.5">扇形</tspan> = ½ R² Δθ，A<tspan baseline-shift="sub" font-size="9.5">三角形</tspan> = ½ R² sin Δθ</text>
+  <text class="formula-text" x="62" y="442">3. 相對比值：A<tspan baseline-shift="sub" font-size="9.5">三角形</tspan> / A<tspan baseline-shift="sub" font-size="9.5">扇形</tspan> = (sin Δθ) / Δθ → 1（Δθ → 0，引自 Ch 7）</text>
+
+  <!-- Panel B -->
+  <rect class="panel" x="570" y="20" width="530" height="460"/>
+  <text class="title" x="595" y="54">圖 B：對稱微元合併與餘弦連乘投影</text>
+  <text class="subtitle" x="595" y="76">相鄰等質微元沿總角平分線逐層合併，極限鎖定半圓重心</text>
+
+  <!-- Semicircle outline: O=(815, 326), R=180 -->
+  <path d="M 635 326 A 180 180 0 0 1 995 326 Z" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.6"/>
+  <line x1="815" y1="326" x2="815" y2="128" stroke="#1E3A5F" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text class="label-blue" x="823" y="135">總對稱軸</text>
+
+  <!-- Two symmetric merged sub-sectors: [42, 90] and [90, 138] -->
+  <path d="M 815 326 L 815 146 A 180 180 0 0 0 681.24 205.56 Z" fill="rgba(30,58,95,0.09)" stroke="#1E3A5F" stroke-width="1.8"/>
+  <path d="M 815 326 L 948.76 205.56 A 180 180 0 0 0 815 146 Z" fill="rgba(224,90,71,0.12)" stroke="#E05A47" stroke-width="1.8"/>
+
+  <!-- Sub-bisectors at 114 deg and 66 deg -->
+  <line x1="815" y1="326" x2="741.79" y2="161.56" stroke="#1E3A5F" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <line x1="815" y1="326" x2="888.21" y2="161.56" stroke="#E05A47" stroke-width="1.4" stroke-dasharray="4 3"/>
+
+  <!-- Sub-centroids GL and GR at radial distance 134 -->
+  <!-- 66 deg, r=134: 815 + 54.50 = 869.50, 326 - 122.41 = 203.59 -->
+  <!-- 114 deg, r=134: 815 - 54.50 = 760.50, 203.59 -->
+  <line x1="760.50" y1="203.59" x2="869.50" y2="203.59" stroke="#1E3A5F" stroke-width="2"/>
+  <polyline points="815,195 823.59,195 823.59,203.59" fill="none" stroke="#1E3A5F" stroke-width="1.4"/>
+
+  <circle cx="760.50" cy="203.59" r="4.8" fill="#1E3A5F" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text class="label-blue" x="726" y="198">G<tspan baseline-shift="sub" font-size="10">L</tspan></text>
+  <circle cx="869.50" cy="203.59" r="4.8" fill="#E05A47" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text class="label-orange" x="880" y="198">G<tspan baseline-shift="sub" font-size="10">R</tspan></text>
+  <circle cx="815" cy="203.59" r="5" fill="#1E3A5F" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text class="label-blue" x="824" y="196">G</text>
+
+  <!-- Half-angle arc -->
+  <path d="M 815 270 A 56 56 0 0 1 837.78 274.84" fill="none" stroke="#E05A47" stroke-width="2"/>
+  <text class="math-orange" x="845" y="281">π / 2ᵏ⁺¹</text>
+
+  <!-- Reference R/2 tick vs Final Centroid d = 4R/(3π) -->
+  <line x1="807" y1="236" x2="823" y2="236" stroke="#64748B" stroke-width="1.5"/>
+  <text class="label-gray" x="760" y="240">R / 2</text>
+
+  <!-- Final semicircle centroid: 0.4244 * 180 = 76.4 -> y = 326 - 76.4 = 249.6 -->
+  <circle cx="815" cy="249.6" r="5.5" fill="#E05A47" stroke="#FFFFFF" stroke-width="1.8"/>
+  <line x1="815" y1="249.6" x2="926" y2="249.6" stroke="#E05A47" stroke-width="1.3" stroke-dasharray="3 2"/>
+  <text class="label-orange" x="932" y="246">半圓重心 d = 4R / (3π)</text>
+  <text class="label-gray" x="932" y="266">（≈ 0.424 R &lt; 0.5 R）</text>
+
+  <!-- Origin O -->
+  <circle cx="815" cy="326" r="4.5" fill="#1E3A5F"/>
+  <text class="label-blue" x="809" y="348">O</text>
+
+  <!-- Formula summary box B -->
+  <rect class="formula-box" x="595" y="366" width="480" height="94"/>
+  <text class="formula-text" x="612" y="391">1. 對稱投影：等質子重心 G<tspan baseline-shift="sub" font-size="9.5">L</tspan>, G<tspan baseline-shift="sub" font-size="9.5">R</tspan> 合併後，距圓心縮放為 cos(π / 2ᵏ⁺¹) 倍。</text>
+  <text class="formula-text" x="612" y="416">2. 連續折疊：d = ⅔ R · cos(π/4)⋯cos(π/2ⁿ⁺¹) = ⅔ R · 2⁻ⁿ / sin(π/2ⁿ⁺¹)</text>
+  <text class="formula-text" x="612" y="442">3. 極限收斂：取 n → ∞ 並套用 lim x / sin x = 1，得 d = 4R / (3π)。</text>
+</svg>

@@ -35,7 +35,7 @@ STAGE_3 = {
                 "margin_inquiries": [
                     {"id": "Th 7.1", "desc": "【深水思辨】如果歷史上巴比倫人規定圓周分為 100 度或 400 度，微積分會發生改變嗎？為什麼只有將圓周定義為 $2\\pi$ 弧度時，$(\\sin x)'$ 才能純淨地等於 $\\cos x$？"},
                     {"id": "Th 7.2", "desc": "【體制內盲點】很多學生在求極限 $\\lim_{x\\to 0}\\frac{\\sin x}{x}$ 時，脫口而出『用羅必達法則，分子求導是 $\\cos x$，分母求導是 1，所以等於 1』。這犯了怎樣荒謬的循環論證（Circular Reasoning）錯誤？"},
-                    {"id": "Th 7.3", "desc": "【幾何圖像直觀】為什麼當 $\\theta$ 極小時，長度為 $\\theta$ 的圓弧可以近乎等同於直角邊 $\\sin\\theta$？二者的誤差為什麼是 $\\theta$ 的三階小量 $O(\\theta^3)$？"}
+                    {"id": "Th 7.3", "desc": "【幾何圖像直觀與微元伏筆】為什麼當 $\\Delta\\theta \\to 0$ 時，長度為 $R\\Delta\\theta$ 的圓弧與內接弦長幾乎重合，且小扇形面積 $\\frac{1}{2}R^2\\Delta\\theta$ 與近似等腰三角形面積 $\\frac{1}{2}R^2\\sin\\Delta\\theta$ 之比 $\\frac{\\sin\\Delta\\theta}{\\Delta\\theta}$ 嚴格收斂於 $1$（誤差為三階小量 $O(\\Delta\\theta^3)$）？這條極限如何為 Chapter 10「微元法先承認代表性再開始使用」與 Chapter 12 半圓重心推導奠定無賒帳合法性？"}
                 ],
                 "foundational_drills": [
                     {"id": "P1 7.1", "desc": "閉卷畫出單位圓夾擠幾何圖，默寫面積不等式與取極限過程。"},

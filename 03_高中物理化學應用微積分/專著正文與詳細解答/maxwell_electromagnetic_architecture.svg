@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 520" width="1120" height="520">
+  <defs>
+    <marker id="arrB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1E3A5F"/>
+    </marker>
+    <marker id="arrO" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#E05A47"/>
+    </marker>
+    <style>
+      .bg { fill: #F8FAFC; }
+      .panel { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1.5; rx: 12; }
+      .title { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: 18px; font-weight: 700; fill: #1E3A5F; }
+      .subtitle { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: 13px; fill: #475569; }
+      .lbl-b { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: 13px; font-weight: 600; fill: #1E3A5F; paint-order: stroke; stroke: #FFFFFF; stroke-width: 3.5px; stroke-linejoin: round; }
+      .lbl-o { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: 13px; font-weight: 700; fill: #E05A47; paint-order: stroke; stroke: #FFFFFF; stroke-width: 3.5px; stroke-linejoin: round; }
+      .lbl-g { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: 12.5px; fill: #64748B; }
+      .fbox { fill: #F1F5F9; stroke: #CBD5E1; stroke-width: 1.2; rx: 8; }
+      .ftxt { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; font-size: 12.8px; fill: #1E3A5F; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1120" height="520"/>
+
+  <!-- Panel A: Capacitor Charging & Displacement Current -->
+  <rect class="panel" x="20" y="20" width="530" height="480"/>
+  <text class="title" x="45" y="54">圖 A：充電電容袋狀曲面與位移電流契約</text>
+  <text class="subtitle" x="45" y="76">同一邊界迴路 C 選取曲面 S₁ 與 S₂ 時，通量變化率補全電流連續性</text>
+
+  <!-- Left wire & right wire -->
+  <line x1="65" y1="222" x2="250" y2="222" stroke="#1E3A5F" stroke-width="3.2"/>
+  <line x1="334" y1="222" x2="495" y2="222" stroke="#1E3A5F" stroke-width="3.2"/>
+  <!-- Current arrows I(t) -->
+  <line x1="82" y1="205" x2="128" y2="205" stroke="#E05A47" stroke-width="2.2" marker-end="url(#arrO)"/>
+  <text class="lbl-o" x="86" y="195">I(t)</text>
+  <line x1="422" y1="205" x2="468" y2="205" stroke="#E05A47" stroke-width="2.2" marker-end="url(#arrO)"/>
+  <text class="lbl-o" x="432" y="195">I(t)</text>
+
+  <!-- Flat Surface S1 inside Ampere loop C (centered at x=165, y=222) -->
+  <ellipse cx="165" cy="222" rx="15" ry="52" fill="rgba(30,58,95,0.14)" stroke="#1E3A5F" stroke-width="2.2"/>
+  <text class="lbl-b" x="136" y="158">迴路 C</text>
+  <text class="lbl-b" x="136" y="294">平面 S₁</text>
+  <path d="M 171 176 A 15 52 0 0 1 179 208" fill="none" stroke="#1E3A5F" stroke-width="2" marker-end="url(#arrB)"/>
+
+  <!-- Bulging Bag Surface S2 anchored on Loop C and passing cleanly through the plate gap x=292 -->
+  <path d="M 165 170 C 238 98, 304 118, 292 222 C 304 326, 238 346, 165 274" fill="rgba(224,90,71,0.11)" stroke="#E05A47" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <text class="lbl-o" x="218" y="118">袋狀曲面 S₂</text>
+  <text class="lbl-g" x="206" y="336">極板夾縫 I<tspan baseline-shift="sub" font-size="9.5">enc</tspan> = 0</text>
+
+  <!-- Left Plate (+q) at x=250 & Right Plate (-q) at x=334 -->
+  <ellipse cx="250" cy="222" rx="15" ry="62" fill="#DBEAFE" stroke="#1E3A5F" stroke-width="2.4"/>
+  <text class="lbl-b" x="236" y="151">+q(t)</text>
+  <ellipse cx="334" cy="222" rx="15" ry="62" fill="#F1F5F9" stroke="#1E3A5F" stroke-width="2.4"/>
+  <text class="lbl-b" x="323" y="151">−q(t)</text>
+
+  <!-- Electric Field E(t) arrows crossing S2 between plates -->
+  <g stroke="#E05A47" stroke-width="1.8" marker-end="url(#arrO)">
+    <line x1="262" y1="186" x2="320" y2="186"/>
+    <line x1="262" y1="210" x2="320" y2="210"/>
+    <line x1="262" y1="234" x2="320" y2="234"/>
+    <line x1="262" y1="258" x2="320" y2="258"/>
+  </g>
+  <text class="lbl-o" x="360" y="255">時變電場 E(t)</text>
+  <text class="lbl-o" x="360" y="275">穿過 S₂ 之 dΦ<tspan baseline-shift="sub" font-size="9.5">E</tspan>/dt</text>
+
+  <!-- Formula Summary Box A -->
+  <rect class="fbox" x="45" y="366" width="480" height="112"/>
+  <text class="ftxt" x="62" y="392">• 選平面 S₁：穿過傳導電流 I<tspan baseline-shift="sub" font-size="9.5">enc</tspan> = I(t)，極板外部無電通量變化。</text>
+  <text class="ftxt" x="62" y="418">• 選袋面 S₂：無傳導電流 I<tspan baseline-shift="sub" font-size="9.5">enc</tspan> = 0，由高斯定律得 q(t) = ε₀ Φ<tspan baseline-shift="sub" font-size="9.5">E</tspan>(t)。</text>
+  <text class="ftxt" x="62" y="444">• 位移電流補償：I<tspan baseline-shift="sub" font-size="9.5">d</tspan> = ε₀ dΦ<tspan baseline-shift="sub" font-size="9.5">E</tspan>/dt = dq/dt = I(t)，兩曲面算結果一致。</text>
+  <text class="ftxt" x="62" y="469">• 安培-麥克斯韋定律：∮ B · dℓ = μ₀ I<tspan baseline-shift="sub" font-size="9.5">enc</tspan> + μ₀ ε₀ (dΦ<tspan baseline-shift="sub" font-size="9.5">E</tspan>/dt)</text>
+
+  <!-- Panel B: Micro-element loops & Electromagnetic Wave -->
+  <rect class="panel" x="570" y="20" width="530" height="480"/>
+  <text class="title" x="595" y="54">圖 B：真空微元矩形迴路與電磁橫波傳播</text>
+  <text class="subtitle" x="595" y="76">法拉第感應與位移電流互為齒輪，導出二階波動方程與光速 c</text>
+
+  <!-- Top Mini-Loops -->
+  <rect x="600" y="92" width="222" height="106" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" rx="6"/>
+  <text class="lbl-b" x="628" y="112">法拉第微元迴路 (xy 面)</text>
+  <rect x="676" y="124" width="66" height="46" fill="rgba(224,90,71,0.08)" stroke="#1E3A5F" stroke-width="1.6"/>
+  <line x1="676" y1="170" x2="676" y2="129" stroke="#E05A47" stroke-width="2" marker-end="url(#arrO)"/>
+  <line x1="742" y1="170" x2="742" y2="129" stroke="#E05A47" stroke-width="2.4" marker-end="url(#arrO)"/>
+  <text class="lbl-o" x="628" y="152">E<tspan baseline-shift="sub" font-size="9.5">y</tspan>(x)</text>
+  <text class="lbl-o" x="748" y="152">E<tspan baseline-shift="sub" font-size="9.5">y</tspan>(x+Δx)</text>
+  <circle cx="709" cy="147" r="2.8" fill="#1E3A5F"/>
+  <circle cx="709" cy="147" r="7.5" fill="none" stroke="#1E3A5F" stroke-width="1.2"/>
+  <text class="lbl-b" x="646" y="190">∂E<tspan baseline-shift="sub" font-size="9.5">y</tspan>/∂x = −∂B<tspan baseline-shift="sub" font-size="9.5">z</tspan>/∂t</text>
+
+  <rect x="838" y="92" width="240" height="106" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" rx="6"/>
+  <text class="lbl-b" x="860" y="112">安培-麥克斯韋微元迴路 (xz 面)</text>
+  <polygon points="894,166 970,166 996,136 920,136" fill="rgba(30,58,95,0.08)" stroke="#1E3A5F" stroke-width="1.6"/>
+  <line x1="894" y1="166" x2="917" y2="140" stroke="#1E3A5F" stroke-width="2" marker-end="url(#arrB)"/>
+  <line x1="970" y1="166" x2="993" y2="140" stroke="#1E3A5F" stroke-width="2.4" marker-end="url(#arrB)"/>
+  <text class="lbl-b" x="850" y="155">B<tspan baseline-shift="sub" font-size="9.5">z</tspan>(x)</text>
+  <text class="lbl-b" x="999" y="155">B<tspan baseline-shift="sub" font-size="9.5">z</tspan>(x+Δx)</text>
+  <line x1="944" y1="158" x2="944" y2="132" stroke="#E05A47" stroke-width="1.8" marker-end="url(#arrO)"/>
+  <text class="lbl-b" x="868" y="190">−∂B<tspan baseline-shift="sub" font-size="9.5">z</tspan>/∂x = μ₀ε₀ ∂E<tspan baseline-shift="sub" font-size="9.5">y</tspan>/∂t</text>
+
+  <!-- 3D Electromagnetic Wave along +x: Origin (615, 298) -->
+  <line x1="615" y1="298" x2="1065" y2="298" stroke="#1E3A5F" stroke-width="2" marker-end="url(#arrB)"/>
+  <line x1="615" y1="298" x2="615" y2="230" stroke="#E05A47" stroke-width="1.8" marker-end="url(#arrO)"/>
+  <line x1="615" y1="298" x2="585" y2="338" stroke="#1E3A5F" stroke-width="1.8" marker-end="url(#arrB)"/>
+  <text class="lbl-o" x="622" y="238">y (E<tspan baseline-shift="sub" font-size="9.5">y</tspan>)</text>
+  <text class="lbl-b" x="580" y="352">z (B<tspan baseline-shift="sub" font-size="9.5">z</tspan>)</text>
+  <text class="lbl-b" x="1018" y="286">傳播 x</text>
+
+  <!-- E_y true sine curve: x in [640..1000], λ=180, A_y=46, y = 298 - 46*sin(2π(x-640)/180) -->
+  <path d="M 640 298 Q 685 215, 730 298 T 820 298 T 910 298 T 1000 298" fill="none" stroke="#E05A47" stroke-width="2.5"/>
+  <!-- Vertical E field arrows matching quadratic/sine curve -->
+  <g stroke="#E05A47" stroke-width="1.4" marker-end="url(#arrO)">
+    <line x1="662.5" y1="298" x2="662.5" y2="269"/>
+    <line x1="685" y1="298" x2="685" y2="258"/>
+    <line x1="707.5" y1="298" x2="707.5" y2="269"/>
+    <line x1="752.5" y1="298" x2="752.5" y2="327"/>
+    <line x1="775" y1="298" x2="775" y2="338"/>
+    <line x1="797.5" y1="298" x2="797.5" y2="327"/>
+    <line x1="842.5" y1="298" x2="842.5" y2="269"/>
+    <line x1="865" y1="298" x2="865" y2="258"/>
+    <line x1="887.5" y1="298" x2="887.5" y2="269"/>
+    <line x1="932.5" y1="298" x2="932.5" y2="327"/>
+    <line x1="955" y1="298" x2="955" y2="338"/>
+    <line x1="977.5" y1="298" x2="977.5" y2="327"/>
+  </g>
+
+  <!-- B_z oblique sine curve: offset (-22, +20) * sin -->
+  <!-- Peak 1 at x=685 -> (685-22, 298+20) = (663, 318); control point at (663, 336) for Q -> peak (663, 318)! -->
+  <!-- Wait: quadratic Bezier from (640,298) to (730,298) with control (641, 338) hits midpoint (640*0.25+641*0.5+730*0.25, 298*0.5+338*0.5) = (663, 318) EXACTLY! -->
+  <!-- T from (730,298) reflects control across (730,298) -> (819, 258)? Let's verify: 2*730 - 641 = 819, midpoint with 820 -> (730*0.25+819*0.5+820*0.25, 298*0.5+258*0.5) = (797, 278) EXACTLY! -->
+  <path d="M 640 298 Q 641 338, 730 298 T 820 298 T 910 298 T 1000 298" fill="none" stroke="#1E3A5F" stroke-width="2.3" stroke-dasharray="5 2.5"/>
+  <g stroke="#1E3A5F" stroke-width="1.3" marker-end="url(#arrB)">
+    <line x1="662.5" y1="298" x2="646" y2="313"/>
+    <line x1="685" y1="298" x2="663" y2="318"/>
+    <line x1="707.5" y1="298" x2="691" y2="313"/>
+    <line x1="752.5" y1="298" x2="769" y2="283"/>
+    <line x1="775" y1="298" x2="797" y2="278"/>
+    <line x1="797.5" y1="298" x2="814" y2="283"/>
+    <line x1="842.5" y1="298" x2="826" y2="313"/>
+    <line x1="865" y1="298" x2="843" y2="318"/>
+    <line x1="887.5" y1="298" x2="871" y2="313"/>
+    <line x1="932.5" y1="298" x2="949" y2="283"/>
+    <line x1="955" y1="298" x2="977" y2="278"/>
+    <line x1="977.5" y1="298" x2="994" y2="283"/>
+  </g>
+
+  <!-- Propagation speed c arrow -->
+  <line x1="900" y1="234" x2="990" y2="234" stroke="#E05A47" stroke-width="2.2" marker-end="url(#arrO)"/>
+  <text class="lbl-o" x="875" y="224">波速 c = 1 / √(μ₀ ε₀)</text>
+
+  <!-- Formula Summary Box B -->
+  <rect class="fbox" x="595" y="366" width="480" height="112"/>
+  <text class="ftxt" x="612" y="392">• 交叉偏導消元：利用混合偏導對稱性得 ∂²E<tspan baseline-shift="sub" font-size="9.5">y</tspan>/∂x² = μ₀ ε₀ (∂²E<tspan baseline-shift="sub" font-size="9.5">y</tspan>/∂t²)</text>
+  <text class="ftxt" x="612" y="418">• 光速計算：c = 1 / √(μ₀ ε₀) ≈ 2.998 × 10⁸ m/s（電磁與光學大一統）</text>
+  <text class="ftxt" x="612" y="444">• 能量密度對等：u<tspan baseline-shift="sub" font-size="9.5">E</tspan> = ½ ε₀ E² = u<tspan baseline-shift="sub" font-size="9.5">B</tspan> = ½ B² / μ₀（串聯 Ch 21 儲能）</text>
+  <text class="ftxt" x="612" y="469">• 坡印廷能流與光壓：S = u c = (E<tspan baseline-shift="sub" font-size="9.5">y</tspan> B<tspan baseline-shift="sub" font-size="9.5">z</tspan>) / μ₀，P = I / c（閉環 Ch 17–18）</text>
+</svg>
